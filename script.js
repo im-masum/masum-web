@@ -95,3 +95,29 @@ projectFilters.forEach((filter) => {
     initReveal();
   }
 })();
+
+// Skill bar animation: animate .skill-bar-fill based on data-percent when visible
+(function initSkillBars() {
+  const fills = document.querySelectorAll(".skill-bar-fill");
+  if (!fills.length) return;
+
+  const io = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        const el = entry.target;
+        const pct = el.getAttribute("data-percent") || "0";
+        el.style.width = pct + "%";
+        el.setAttribute("aria-valuenow", pct);
+        observer.unobserve(el);
+      });
+    },
+    { threshold: 0.25 }
+  );
+
+  fills.forEach((f) => {
+    // start collapsed for animation
+    f.style.width = "0%";
+    io.observe(f);
+  });
+})();

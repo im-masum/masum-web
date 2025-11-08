@@ -367,33 +367,64 @@
             </header>
 
             <div class="about-grid">
-                <div class="about-profile reveal" data-delay="0.12" aria-hidden="false">
-                    <img src="https://via.placeholder.com/320x320?text=Masum"
-                        alt="Masum — Founder & Frontend Engineer" />
+                <aside class="about-profile reveal" data-delay="0.12" aria-labelledby="profile-heading">
+                    <img src="https://via.placeholder.com/320x320?text=Masum" alt="Masum — Founder & Frontend Engineer"
+                        width="320" height="320" />
                     <div class="profile-meta">
-                        <h3>Masum</h3>
+                        <h3 id="profile-heading">Masum</h3>
                         <p class="muted">Founder • Frontend Engineer • Motion Designer</p>
                         <p class="profile-blurb">I combine product-first thinking with pragmatic frontend engineering to
                             deliver predictable, fast, and inclusive interfaces.</p>
+
+                        <ul class="profile-stats" aria-hidden="true">
+                            <li><strong>10+</strong><span>Years</span></li>
+                            <li><strong>50+</strong><span>Projects</span></li>
+                            <li><strong>99+</strong><span>Lighthouse</span></li>
+                        </ul>
+
                         <div class="profile-links">
                             <a href="#" aria-label="Open LinkedIn">LinkedIn</a>
                             <a href="#" aria-label="Open GitHub">GitHub</a>
+                            <a class="btn outline small" href="#contact">Hire Me</a>
+                            <a class="btn small" href="#" download="Masum_Resume.pdf">Download CV</a>
                         </div>
                     </div>
-                </div>
+                </aside>
 
                 <div class="about-content reveal" data-delay="0.18">
                     <p>Approach: prioritize clarity, performance and accessibility. I work with teams to define
                         component contracts, measure outcomes and ship reliable UI.</p>
 
-                    <div class="capabilities">
-                        <h4>Core Capabilities</h4>
-                        <ul class="skills-list" aria-hidden="false">
-                            <li>Design systems & tokens</li>
-                            <li>Animation & micro-interactions</li>
-                            <li>Performance (Core Web Vitals)</li>
-                            <li>Accessibility audits & remediation</li>
-                        </ul>
+                    <div class="skills">
+                        <h4>Skills & Proficiencies</h4>
+
+                        <div class="skill">
+                            <div class="skill-head"><span>HTML & CSS</span><span class="skill-pct">95%</span></div>
+                            <div class="skill-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                                <div class="skill-bar-fill" data-percent="95" aria-hidden="true"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <div class="skill-head"><span>JavaScript</span><span class="skill-pct">90%</span></div>
+                            <div class="skill-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                                <div class="skill-bar-fill" data-percent="90" aria-hidden="true"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <div class="skill-head"><span>Performance</span><span class="skill-pct">92%</span></div>
+                            <div class="skill-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                                <div class="skill-bar-fill" data-percent="92" aria-hidden="true"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <div class="skill-head"><span>Animation</span><span class="skill-pct">88%</span></div>
+                            <div class="skill-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                                <div class="skill-bar-fill" data-percent="88" aria-hidden="true"></div>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="milestones">
