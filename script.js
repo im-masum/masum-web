@@ -1,18 +1,29 @@
-// Dark Mode Toggle
+// Dark Mode Toggle (defensive)
 const themeToggle = document.getElementById("themeToggle");
-themeToggle.addEventListener("click", () => {
-  document.body.classList.toggle("dark");
-  themeToggle.textContent = document.body.classList.contains("dark")
-    ? "☀️"
-    : "🌙";
-});
+if (themeToggle) {
+  // initialize aria-pressed
+  themeToggle.setAttribute(
+    "aria-pressed",
+    document.body.classList.contains("dark")
+  );
+  themeToggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+    const isDark = document.body.classList.contains("dark");
+    themeToggle.textContent = isDark ? "☀️" : "🌙";
+    themeToggle.setAttribute("aria-pressed", isDark);
+  });
+}
 
-// Mobile Menu Toggle
+// Mobile Menu Toggle (defensive + aria)
 const menuToggle = document.getElementById("menuToggle");
 const navLinks = document.querySelector(".nav-links");
-menuToggle.addEventListener("click", () => {
-  navLinks.classList.toggle("active");
-});
+if (menuToggle && navLinks) {
+  menuToggle.setAttribute("aria-expanded", "false");
+  menuToggle.addEventListener("click", () => {
+    const expanded = navLinks.classList.toggle("active");
+    menuToggle.setAttribute("aria-expanded", expanded ? "true" : "false");
+  });
+}
 
 // Scroll Reveal
 const fadeSections = document.querySelectorAll(".fade-slide");
@@ -47,12 +58,20 @@ function filterProjects(filter) {
 
 projectFilters.forEach((filter) => {
   filter.addEventListener("click", () => {
-    // Remove active class from current active filter
-    document.querySelector(".filter.active").classList.remove("active");
-    // Add active class to clicked filter
+    // Remove active class from current active filter (guarded)
+    const current = document.querySelector(".filter.active");
+    if (current && current !== filter) current.classList.remove("active");
+    // Toggle active on clicked filter
     filter.classList.add("active");
     // Filter the projects
     filterProjects(filter);
+  });
+  // keyboard support (Enter/Space)
+  filter.addEventListener("keydown", (e) => {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      filter.click();
+    }
   });
 });
 

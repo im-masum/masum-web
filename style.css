@@ -10,6 +10,7 @@
 :root {
     --bg: linear-gradient(120deg, #f8f8f8, #dfe9f3);
     --text: #111;
+    --muted: rgba(17, 17, 17, 0.65);
     --accent: #ff4b2b;
     --accent-gradient: linear-gradient(45deg, #ff4b2b, #ff416c);
     --nav-bg: rgba(255, 255, 255, 0.3);
@@ -20,6 +21,7 @@
 body.dark {
     --bg: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
     --text: #f1f1f1;
+    --muted: rgba(241, 241, 241, 0.72);
     --accent: #00c6ff;
     --accent-gradient: linear-gradient(45deg, #00c6ff, #0072ff);
     --nav-bg: rgba(0, 0, 0, 0.3);
