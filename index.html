@@ -247,58 +247,105 @@
             </header>
 
             <nav class="projects-filters" aria-label="Filter projects">
-                <button class="filter active" data-filter="all" aria-pressed="true">All</button>
-                <button class="filter" data-filter="web">Web</button>
-                <button class="filter" data-filter="animation">Animation</button>
-                <button class="filter" data-filter="performance">Performance</button>
+                <button class="filter active" data-filter="all" aria-pressed="true">
+                    <span class="filter-text">All</span>
+                    <span class="filter-count">3</span>
+                </button>
+                <button class="filter" data-filter="web">
+                    <span class="filter-text">Web Apps</span>
+                    <span class="filter-count">3</span>
+                </button>
+                <button class="filter" data-filter="animation">
+                    <span class="filter-text">Animation</span>
+                    <span class="filter-count">2</span>
+                </button>
+                <button class="filter" data-filter="performance">
+                    <span class="filter-text">Performance</span>
+                    <span class="filter-count">1</span>
+                </button>
             </nav>
 
             <div class="projects-row" role="list" aria-label="Projects list">
-                <article class="project-card" role="listitem" data-type="web" tabindex="0"
-                    aria-label="Interactive Landing">
+                <article class="project-card" role="listitem" data-type="web animation" tabindex="0"
+                    aria-label="E-Commerce Dashboard">
                     <div class="project-media" aria-hidden="true">
-                        <img src="https://via.placeholder.com/640x360?text=Interactive+Landing"
-                            alt="Interactive Landing screenshot">
+                        <img src="https://via.placeholder.com/640x360?text=E-Commerce+Dashboard"
+                            alt="E-Commerce Dashboard screenshot" loading="lazy" width="640" height="360">
+                        <div class="project-overlay">
+                            <span class="view-project">View Project</span>
+                        </div>
                     </div>
                     <div class="project-body">
-                        <h3 class="project-title">Interactive Landing</h3>
-                        <p class="project-desc">Responsive landing with scroll-driven animations and accessible focus
-                            states.</p>
+                        <h3 class="project-title">E-Commerce Dashboard</h3>
+                        <p class="project-desc">A fully responsive admin dashboard with real-time analytics, dark mode,
+                            and drag-and-drop functionality.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">Tailwind</span>
+                            <span class="tech-tag">Firebase</span>
+                        </div>
                         <div class="project-actions">
-                            <a class="btn small" href="#">Live Demo</a>
-                            <a class="btn outline small" href="#">Repo</a>
+                            <a class="btn small" href="#" target="_blank" rel="noopener">Live Demo</a>
+                            <a class="btn outline small" href="#" target="_blank" rel="noopener">
+                                <i class="fab fa-github"></i> Code
+                            </a>
                         </div>
                     </div>
                 </article>
 
-                <article class="project-card" role="listitem" data-type="animation" tabindex="0"
-                    aria-label="Motion UI Kit">
+                <article class="project-card" role="listitem" data-type="animation web" tabindex="0"
+                    aria-label="Motion Design System">
                     <div class="project-media" aria-hidden="true">
-                        <img src="https://via.placeholder.com/640x360?text=Motion+UI+Kit"
-                            alt="Motion UI Kit screenshot">
+                        <img src="https://via.placeholder.com/640x360?text=Motion+Design+System"
+                            alt="Motion Design System screenshot" loading="lazy" width="640" height="360">
+                        <div class="project-overlay">
+                            <span class="view-project">View Project</span>
+                        </div>
                     </div>
                     <div class="project-body">
-                        <h3 class="project-title">Motion UI Kit</h3>
-                        <p class="project-desc">Reusable motion primitives and micro-interactions for components.</p>
+                        <h3 class="project-title">Motion Design System</h3>
+                        <p class="project-desc">A comprehensive animation library with 50+ reusable components and
+                            customizable motion primitives.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Framer Motion</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">GSAP</span>
+                            <span class="tech-tag">Storybook</span>
+                        </div>
                         <div class="project-actions">
-                            <a class="btn small" href="#">Live Demo</a>
-                            <a class="btn outline small" href="#">Repo</a>
+                            <a class="btn small" href="#" target="_blank" rel="noopener">Documentation</a>
+                            <a class="btn outline small" href="#" target="_blank" rel="noopener">
+                                <i class="fab fa-github"></i> Code
+                            </a>
                         </div>
                     </div>
                 </article>
 
-                <article class="project-card" role="listitem" data-type="performance" tabindex="0"
-                    aria-label="Performance Audit">
+                <article class="project-card" role="listitem" data-type="performance web" tabindex="0"
+                    aria-label="SaaS Platform">
                     <div class="project-media" aria-hidden="true">
-                        <img src="https://via.placeholder.com/640x360?text=Performance+Audit"
-                            alt="Performance Audit screenshot">
+                        <img src="https://via.placeholder.com/640x360?text=SaaS+Platform" alt="SaaS Platform screenshot"
+                            loading="lazy" width="640" height="360">
+                        <div class="project-overlay">
+                            <span class="view-project">View Project</span>
+                        </div>
                     </div>
                     <div class="project-body">
-                        <h3 class="project-title">Performance Audit</h3>
-                        <p class="project-desc">Bundle & runtime optimizations that improved Core Web Vitals.</p>
+                        <h3 class="project-title">SaaS Platform</h3>
+                        <p class="project-desc">High-performance SaaS application with 99+ Lighthouse score, SSR, and
+                            optimized asset delivery.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Next.js</span>
+                            <span class="tech-tag">Redis</span>
+                            <span class="tech-tag">AWS</span>
+                            <span class="tech-tag">GraphQL</span>
+                        </div>
                         <div class="project-actions">
-                            <a class="btn small" href="#">Case Study</a>
-                            <a class="btn outline small" href="#">Repo</a>
+                            <a class="btn small" href="#" target="_blank" rel="noopener">Case Study</a>
+                            <a class="btn outline small" href="#" target="_blank" rel="noopener">
+                                <i class="fab fa-github"></i> Code
+                            </a>
                         </div>
                     </div>
                 </article>

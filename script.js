@@ -23,6 +23,39 @@ window.addEventListener("scroll", () => {
   });
 });
 
+// Project Filtering
+const projectFilters = document.querySelectorAll(".projects-filters .filter");
+const projectCards = document.querySelectorAll(".project-card");
+
+function filterProjects(filter) {
+  const filterValue = filter.getAttribute("data-filter");
+
+  projectCards.forEach((card) => {
+    const types = card.getAttribute("data-type").split(" ");
+
+    if (filterValue === "all" || types.includes(filterValue)) {
+      card.style.display = "";
+      card.style.opacity = "0";
+      setTimeout(() => {
+        card.style.opacity = "1";
+      }, 50);
+    } else {
+      card.style.display = "none";
+    }
+  });
+}
+
+projectFilters.forEach((filter) => {
+  filter.addEventListener("click", () => {
+    // Remove active class from current active filter
+    document.querySelector(".filter.active").classList.remove("active");
+    // Add active class to clicked filter
+    filter.classList.add("active");
+    // Filter the projects
+    filterProjects(filter);
+  });
+});
+
 // Reveal / stagger animations for elements with .reveal
 (function () {
   function initReveal() {
