@@ -1,0 +1,75 @@
+/* style-accessibility.css - skip link, focus-visible, honeypot, back-to-top */
+/* Skip link: hidden off-canvas and visible when focused */
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap;
+}
+
+.skip-link:focus,
+.skip-link:active {
+    position: fixed;
+    left: 16px;
+    top: 16px;
+    width: auto;
+    height: auto;
+    padding: 0.5rem 0.75rem;
+    border-radius: 6px;
+    background: var(--accent);
+    color: #fff;
+    z-index: 2000;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+    clip: auto;
+}
+
+/* focus-visible outlines (keyboard users) */
+*:focus:not(:focus-visible) {
+    outline: none;
+}
+
+*:focus-visible {
+    outline: 3px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 4px;
+}
+
+/* Honeypot (visually-hidden / off-canvas) */
+.honeypot {
+    position: absolute !important;
+    left: -9999px !important;
+    width: 1px !important;
+    height: 1px !important;
+    overflow: hidden !important;
+    pointer-events: none !important;
+    opacity: 0 !important;
+}
+
+/* Back-to-top button */
+#backToTop {
+    position: fixed;
+    right: 18px;
+    bottom: 18px;
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(8px);
+    transition: opacity 0.25s ease, transform 0.25s ease;
+    z-index: 1200;
+    background: var(--nav-bg);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    padding: 8px 10px;
+    border-radius: 8px;
+}
+
+#backToTop.visible {
+    opacity: 1;
+    transform: none;
+}
+
+#backToTop:focus {
+    outline: 3px solid var(--accent);
+}

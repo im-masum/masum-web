@@ -8,14 +8,25 @@
         content="MasumWeb — accessible, performant front-end experiences: design systems, animations, and production-ready components." />
     <meta name="theme-color" content="#ffffff" />
     <title>MasumWeb | Animated UI</title>
-    <!-- Poppins font used in CSS; include a lightweight local fallback if offline -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style-navbar.css">
+    <link rel="stylesheet" href="style-hero.css" />
+    <link rel="stylesheet" href="style-projects.css">
+    <link rel="stylesheet" href="style-services.css" />
+    <link rel="stylesheet" href="style-about.css" />
+    <link rel="stylesheet" href="style-base.css">
+    <link rel="stylesheet" href="style-contact.css" />
+    <link rel="stylesheet" href="style-footer.css" />
+    <link rel="stylesheet" href="style-accessibility.css" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 
 <body>
+    <a class="skip-link" href="#site-main">Skip to content</a>
+
     <!-- Navbar -->
     <nav class="navbar glass">
         <div class="logo">Masum<span>Web</span></div>
@@ -25,9 +36,9 @@
             <li>
                 <a href="#services">Services</a>
                 <ul class="dropdown">
-                    <li><a href="#">Web Design</a></li>
-                    <li><a href="#">UI Animation</a></li>
-                    <li><a href="#">Frontend Dev</a></li>
+                    <li><a href="#services">Web Design</a></li>
+                    <li><a href="#services">UI Animation</a></li>
+                    <li><a href="#services">Frontend Dev</a></li>
                 </ul>
             </li>
             <li><a href="#projects">Projects</a></li>
@@ -36,9 +47,9 @@
         </ul>
 
         <div class="nav-icons">
-            <button id="menuToggle" class="hamburger">☰</button>
+            <button id="menuToggle" class="hamburger" aria-label="Open menu">☰</button>
         </div>
-        <button id="themeToggle" class="icon">🌙</button>
+        <button id="themeToggle" class="icon" aria-pressed="false">🌙</button>
     </nav>
 
     <main id="site-main">
@@ -149,8 +160,7 @@
                             <div class="service-body">
                                 <h3 class="service-title">UI Animation</h3>
                                 <p class="service-description">Creating delightful micro-interactions and smooth
-                                    transitions
-                                    that enhance user experience.</p>
+                                    transitions that enhance user experience.</p>
                                 <ul class="service-features">
                                     <li><i class="fas fa-check"></i> Motion Design</li>
                                     <li><i class="fas fa-check"></i> Interaction States</li>
@@ -169,8 +179,7 @@
                             <div class="service-body">
                                 <h3 class="service-title">Frontend Development</h3>
                                 <p class="service-description">Building robust, scalable applications with modern
-                                    frameworks
-                                    and best practices.</p>
+                                    frameworks and best practices.</p>
                                 <ul class="service-features">
                                     <li><i class="fas fa-check"></i> Modern JavaScript</li>
                                     <li><i class="fas fa-check"></i> React/Vue/Angular</li>
@@ -209,8 +218,7 @@
                             <div class="service-body">
                                 <h3 class="service-title">Accessibility</h3>
                                 <p class="service-description">Ensuring your website is usable by everyone, following
-                                    WCAG
-                                    guidelines.</p>
+                                    WCAG guidelines.</p>
                                 <ul class="service-features">
                                     <li><i class="fas fa-check"></i> WCAG Compliance</li>
                                     <li><i class="fas fa-check"></i> Screen Reader Support</li>
@@ -229,8 +237,7 @@
                             <div class="service-body">
                                 <h3 class="service-title">Technical Consulting</h3>
                                 <p class="service-description">Strategic guidance for your digital projects and
-                                    technical
-                                    decisions.</p>
+                                    technical decisions.</p>
                                 <ul class="service-features">
                                     <li><i class="fas fa-check"></i> Technical Strategy</li>
                                     <li><i class="fas fa-check"></i> Architecture Planning</li>
@@ -292,8 +299,7 @@
                         <div class="project-body">
                             <h3 class="project-title">E-Commerce Dashboard</h3>
                             <p class="project-desc">A fully responsive admin dashboard with real-time analytics, dark
-                                mode,
-                                and drag-and-drop functionality.</p>
+                                mode, and drag-and-drop functionality.</p>
                             <div class="project-tech">
                                 <span class="tech-tag">React</span>
                                 <span class="tech-tag">TypeScript</span>
@@ -349,8 +355,7 @@
                         <div class="project-body">
                             <h3 class="project-title">SaaS Platform</h3>
                             <p class="project-desc">High-performance SaaS application with 99+ Lighthouse score, SSR,
-                                and
-                                optimized asset delivery.</p>
+                                and optimized asset delivery.</p>
                             <div class="project-tech">
                                 <span class="tech-tag">Next.js</span>
                                 <span class="tech-tag">Redis</span>
@@ -390,8 +395,7 @@
                             <h3 id="profile-heading">Masum</h3>
                             <p class="muted">Founder • Frontend Engineer • Motion Designer</p>
                             <p class="profile-blurb">I combine product-first thinking with pragmatic frontend
-                                engineering to
-                                deliver predictable, fast, and inclusive interfaces.</p>
+                                engineering to deliver predictable, fast, and inclusive interfaces.</p>
 
                             <ul class="profile-stats" aria-hidden="true">
                                 <li><strong>10+</strong><span>Years</span></li>
@@ -491,6 +495,10 @@
                         aria-describedby="contact-help">
                         <p id="contact-help" class="visually-hidden">All fields marked required must be completed before
                             sending.</p>
+                        <!-- honeypot for bots (should be hidden) -->
+                        <label class="visually-hidden" for="website">Leave this field empty</label>
+                        <input type="text" id="website" name="website" class="honeypot" autocomplete="off" />
+
                         <div class="form-row">
                             <label class="form-field">
                                 <input type="text" name="name" id="name" required autocomplete="name" placeholder=" " />
@@ -575,6 +583,216 @@
     </footer>
 
     <script src="script.js"></script>
+</body>
+
+</html>
+
+<div class="projects-cta">
+    <a href="#projects" class="btn">See More Projects</a>
+</div>
+</div>
+</section>
+
+<!-- About -->
+<section id="about" class="section about-section" aria-labelledby="about-heading">
+    <div class="container about-container">
+        <header class="about-header reveal" data-delay="0.05">
+            <h2 id="about-heading">About MasumWeb</h2>
+            <p class="lead">Crafting accessible, performant front-end experiences — from design systems to
+                production-ready components.</p>
+        </header>
+
+        <div class="about-grid">
+            <aside class="about-profile reveal" data-delay="0.12" aria-labelledby="profile-heading">
+                <img src="https://via.placeholder.com/320x320?text=Masum" alt="Masum — Founder & Frontend Engineer"
+                    width="320" height="320" />
+                <div class="profile-meta">
+                    <h3 id="profile-heading">Masum</h3>
+                    <p class="muted">Founder • Frontend Engineer • Motion Designer</p>
+                    <p class="profile-blurb">I combine product-first thinking with pragmatic frontend
+                        engineering to
+                        deliver predictable, fast, and inclusive interfaces.</p>
+
+                    <ul class="profile-stats" aria-hidden="true">
+                        <li><strong>10+</strong><span>Years</span></li>
+                        <li><strong>50+</strong><span>Projects</span></li>
+                        <li><strong>99+</strong><span>Lighthouse</span></li>
+                    </ul>
+
+                    <div class="profile-links">
+                        <a href="#" aria-label="Open LinkedIn">LinkedIn</a>
+                        <a href="#" aria-label="Open GitHub">GitHub</a>
+                        <a class="btn outline small" href="#contact">Hire Me</a>
+                        <a class="btn small" href="#" download="Masum_Resume.pdf">Download CV</a>
+                    </div>
+                </div>
+            </aside>
+
+            <div class="about-content reveal" data-delay="0.18">
+                <p>Approach: prioritize clarity, performance and accessibility. I work with teams to define
+                    component contracts, measure outcomes and ship reliable UI.</p>
+
+                <div class="skills">
+                    <h4>Skills & Proficiencies</h4>
+
+                    <div class="skill">
+                        <div class="skill-head"><span>HTML & CSS</span><span class="skill-pct">95%</span></div>
+                        <div class="skill-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                            <div class="skill-bar-fill" data-percent="95" aria-hidden="true"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill-head"><span>JavaScript</span><span class="skill-pct">90%</span></div>
+                        <div class="skill-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                            <div class="skill-bar-fill" data-percent="90" aria-hidden="true"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill-head"><span>Performance</span><span class="skill-pct">92%</span></div>
+                        <div class="skill-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                            <div class="skill-bar-fill" data-percent="92" aria-hidden="true"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill-head"><span>Animation</span><span class="skill-pct">88%</span></div>
+                        <div class="skill-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                            <div class="skill-bar-fill" data-percent="88" aria-hidden="true"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="milestones">
+                    <h4>Recent milestones</h4>
+                    <ol class="timeline" aria-label="Recent milestones">
+                        <li><strong>2025 Q2</strong> — SaaS UI revamp, TTI −38%.</li>
+                        <li><strong>2024 Q4</strong> — Design system rollout with themes & tokens.</li>
+                        <li><strong>2024 Q1</strong> — Enterprise accessibility audit and remediation.</li>
+                    </ol>
+                </div>
+
+                <div class="about-cta">
+                    <a href="#contact" class="btn">Start a Project</a>
+                    <a href="#projects" class="btn outline">View Work</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="section contact-section" aria-labelledby="contact-heading">
+    <div class="container">
+        <header class="section-header reveal" data-delay="0.04">
+            <h2 id="contact-heading">Contact</h2>
+            <p class="lead">Let’s discuss your product, timeline and priorities — I’ll reply within 48 hours.
+            </p>
+        </header>
+
+        <div class="contact-grid">
+            <aside class="contact-card reveal reveal-left" data-delay="0.12" aria-labelledby="contact-card-title">
+                <h3 id="contact-card-title">Get in touch</h3>
+                <p class="muted">Email, schedule or quick chat — choose what works best.</p>
+                <ul class="contact-info" aria-hidden="false">
+                    <li><strong>Email</strong><span>hello@masumweb.example</span></li>
+                    <li><strong>Location</strong><span>Remote · UTC+6</span></li>
+                    <li><strong>Availability</strong><span>Mon–Fri · 09:00–18:00</span></li>
+                </ul>
+                <div class="contact-actions">
+                    <a href="mailto:hello@masumweb.example" class="btn">Email Me</a>
+                    <a href="#projects" class="btn outline">View Work</a>
+                </div>
+            </aside>
+
+            <form id="contactForm" class="contact-form reveal reveal-right" data-delay="0.18" novalidate
+                aria-describedby="contact-help">
+                <p id="contact-help" class="visually-hidden">All fields marked required must be completed before
+                    sending.</p>
+                <div class="form-row">
+                    <label class="form-field">
+                        <input type="text" name="name" id="name" required autocomplete="name" placeholder=" " />
+                        <span class="label">Full name</span>
+                    </label>
+                    <label class="form-field">
+                        <input type="email" name="email" id="email" required autocomplete="email" placeholder=" " />
+                        <span class="label">Email</span>
+                    </label>
+                </div>
+
+                <label class="form-field">
+                    <input type="text" name="subject" id="subject" placeholder=" " />
+                    <span class="label">Subject (optional)</span>
+                </label>
+
+                <label class="form-field">
+                    <textarea name="message" id="message" rows="6" required placeholder=" "></textarea>
+                    <span class="label">Message</span>
+                </label>
+
+                <div class="form-actions">
+                    <button type="submit" id="contactSubmit" class="btn" aria-live="polite">
+                        <span class="btn-text">Send Message</span>
+                        <span class="btn-spinner" aria-hidden="true"></span>
+                    </button>
+                    <div id="contactFeedback" class="contact-feedback" role="status" aria-atomic="true"></div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<footer class="site-footer" role="contentinfo">
+    <div class="container footer-grid">
+        <div class="footer-brand">
+            <div class="logo">Masum<span>Web</span></div>
+            <p class="muted">Designing accessible, performant front-end experiences — from pixels to production.</p>
+        </div>
+
+        <nav class="footer-nav" aria-label="Footer navigation">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="footer-contact">
+            <h4>Contact</h4>
+            <address>
+                <a href="mailto:hello@masumweb.example">hello@masumweb.example</a><br />
+                <span>Remote — UTC+6</span>
+            </address>
+            <div class="social" aria-label="Social links">
+                <a href="#" aria-label="GitHub">GitHub</a>
+                <a href="#" aria-label="LinkedIn">LinkedIn</a>
+            </div>
+        </div>
+
+        <div class="footer-newsletter">
+            <h4>Newsletter</h4>
+            <p class="muted">Get occasional updates about new projects and resources.</p>
+            <form id="newsletterForm" class="newsletter-form" novalidate>
+                <label class="visually-hidden" for="nl-email">Email address</label>
+                <input id="nl-email" type="email" placeholder="you@company.com" required />
+                <button type="submit" class="btn">Subscribe</button>
+                <div id="nlFeedback" class="muted" aria-live="polite"></div>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <small>© 2025 MasumWeb · All rights reserved</small>
+        <button id="backToTop" class="btn small" aria-label="Back to top">Top</button>
+    </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 
 </html>

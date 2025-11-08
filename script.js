@@ -140,3 +140,93 @@ projectFilters.forEach((filter) => {
     io.observe(f);
   });
 })();
+
+// Contact form handler: client-side validation, honeypot, spinner, accessible feedback
+(function initContactForm() {
+  const form = document.getElementById("contactForm");
+  const submitBtn = document.getElementById("contactSubmit");
+  const feedback = document.getElementById("contactFeedback");
+  if (!form || !submitBtn || !feedback) return;
+
+  function setLoading(loading) {
+    if (loading) submitBtn.classList.add("loading");
+    else submitBtn.classList.remove("loading");
+  }
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    // basic honeypot
+    const honeypot = form.querySelector(".honeypot");
+    if (honeypot && honeypot.value.trim() !== "") {
+      // silently abort (likely bot)
+      return;
+    }
+
+    // simple validation
+    const name = form.querySelector("#name");
+    const email = form.querySelector("#email");
+    const message = form.querySelector("#message");
+    let valid = true;
+    [name, email, message].forEach((el) => {
+      el.classList.remove("field-error");
+      if (!el || !el.value || !el.value.trim()) {
+        valid = false;
+        if (el) el.classList.add("field-error");
+      }
+    });
+
+    if (!valid) {
+      feedback.textContent = "Please complete the required fields.";
+      feedback.classList.remove("success");
+      feedback.classList.add("error");
+      feedback.setAttribute("aria-live", "polite");
+      return;
+    }
+
+    // simulate send
+    setLoading(true);
+    feedback.textContent = "";
+    feedback.classList.remove("error");
+
+    // Simulate a network request (replace with real POST in production)
+    setTimeout(() => {
+      setLoading(false);
+      feedback.textContent = "Thanks — your message has been sent.";
+      feedback.classList.remove("error");
+      feedback.classList.add("success");
+      // reset form
+      form.reset();
+      // clear any error styles
+      [name, email, message].forEach(
+        (el) => el && el.classList.remove("field-error")
+      );
+    }, 900);
+  });
+})();
+
+// Back-to-top button: show after scroll and smooth-scroll (respecting reduced motion)
+(function initBackToTop() {
+  const btn = document.getElementById("backToTop");
+  if (!btn) return;
+
+  const prefersReduced = window.matchMedia(
+    "(prefers-reduced-motion: reduce)"
+  ).matches;
+
+  function scrollToTop() {
+    if (prefersReduced) window.scrollTo(0, 0);
+    else window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
+  btn.addEventListener("click", scrollToTop);
+
+  // toggle visibility
+  function onScroll() {
+    if (window.scrollY > 300) btn.classList.add("visible");
+    else btn.classList.remove("visible");
+  }
+
+  window.addEventListener("scroll", onScroll, { passive: true });
+  // initial state
+  onScroll();
+})();
