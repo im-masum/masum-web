@@ -120,19 +120,72 @@
 
 .hero-social {
     display: flex;
-    gap: 1.5rem;
+    gap: 1.25rem;
+    align-items: center;
 }
 
 .social-link {
     color: var(--text);
     opacity: 0.7;
-    transition: all 0.3s ease;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
 }
 
 .social-link:hover {
     color: var(--accent);
     opacity: 1;
-    transform: translateY(-2px);
+    transform: translateY(-2px) scale(1.1);
+}
+
+.social-link::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--accent);
+    opacity: 0;
+    transform: scale(0);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: -1;
+}
+
+.social-link:hover::before {
+    opacity: 0.1;
+    transform: scale(1);
+}
+
+.social-link i {
+    font-size: 1.25rem;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-link:hover i {
+    transform: scale(1.1);
+}
+
+@keyframes socialPulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(var(--accent-rgb), 0.4);
+    }
+
+    70% {
+        box-shadow: 0 0 0 10px rgba(var(--accent-rgb), 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(var(--accent-rgb), 0);
+    }
+}
+
+.social-link:active {
+    transform: scale(0.95);
+    animation: socialPulse 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-right {

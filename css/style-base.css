@@ -12,6 +12,7 @@
     --text: #111;
     --muted: rgba(17, 17, 17, 0.65);
     --accent: #ff4b2b;
+    --accent-rgb: 255, 75, 43;
     --accent-gradient: linear-gradient(45deg, #ff4b2b, #ff416c);
     --nav-bg: rgba(255, 255, 255, 0.3);
     --shadow: rgba(0, 0, 0, 0.1);
@@ -23,6 +24,7 @@ body.dark {
     --text: #f1f1f1;
     --muted: rgba(241, 241, 241, 0.72);
     --accent: #00c6ff;
+    --accent-rgb: 0, 198, 255;
     --accent-gradient: linear-gradient(45deg, #00c6ff, #0072ff);
     --nav-bg: rgba(0, 0, 0, 0.3);
     --shadow: rgba(255, 255, 255, 0.08);
