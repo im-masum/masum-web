@@ -5,6 +5,7 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
     list-style: none;
+    text-decoration: none;
 }
 
 :root {
@@ -20,7 +21,7 @@
 }
 
 body.dark {
-    --bg: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+    --bg: linear-gradient(120deg, #0f2027, #080f11, #0f0f10);
     --text: #f1f1f1;
     --muted: rgba(241, 241, 241, 0.72);
     --accent: #00c6ff;
@@ -32,6 +33,7 @@ body.dark {
 }
 
 body {
+    
     background: var(--bg);
     color: var(--text);
     transition: all 0.5s ease;
