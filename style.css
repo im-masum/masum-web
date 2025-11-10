@@ -5,6 +5,7 @@
     font-family: "Poppins", sans-serif;
     list-style: none;
     text-decoration: none;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -20,12 +21,12 @@
 }
 
 body.dark {
-    --bg: #061422;
+    --bg: #050620;
     --text: #f1f1f1;
     --muted: rgba(241, 241, 241, 0.72);
     --accent: #00c6ff;
     --accent-rgb: 0, 198, 255;
-    /* --accent-gradient: linear-gradient(45deg, #00c6ff, #0072ff);/ */
+    --accent-gradient: linear-gradient(45deg, #00c6ff, #0072ff);
     --nav-bg: rgba(0, 0, 0, 0.3);
     --shadow: rgba(255, 255, 255, 0.08);
     --hero-gradient: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(15, 32, 39, 0.8) 100%);
@@ -36,13 +37,15 @@ body {
     background: var(--bg);
     color: var(--text);
     transition: all 0.5s ease;
-    scroll-behavior: smooth;
 }
 
 section {
-    box-shadow: 20px 20px 60px rgba(135, 114, 114, 0.1);
+    box-shadow: 5px 5px 20px rgba(211, 210, 210, 0.1);
     min-height: 50vh;
     padding: min(2rem, 20%) 2rem;
+    margin: 20px;
+    border-radius: 20px;
+
 }
 
 .btn {
