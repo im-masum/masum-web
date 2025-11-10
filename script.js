@@ -25,6 +25,48 @@ if (menuToggle && navLinks) {
   });
 }
 
+// Mobile: allow tapping a parent nav item with a dropdown to toggle it (small screens)
+document.addEventListener("click", (e) => {
+  const isMobile = window.matchMedia("(max-width: 880px)").matches;
+  if (!isMobile) return;
+
+  // close mobile nav when clicking outside
+  const clickedInsideNav = !!e.target.closest(".nav-links");
+  const clickedToggle = !!e.target.closest("#menuToggle");
+  if (
+    navLinks &&
+    navLinks.classList.contains("active") &&
+    !clickedInsideNav &&
+    !clickedToggle
+  ) {
+    navLinks.classList.remove("active");
+    if (menuToggle) menuToggle.setAttribute("aria-expanded", "false");
+    // also collapse any open dropdowns
+    document
+      .querySelectorAll(".nav-links li.open")
+      .forEach((li) => li.classList.remove("open"));
+    return;
+  }
+
+  // toggle dropdowns on parent link click
+  const anchor = e.target.closest(".nav-links a");
+  if (!anchor) return;
+  const parentLi = anchor.closest(".nav-links li");
+  if (!parentLi) return;
+  const submenu = parentLi.querySelector(".dropdown");
+  if (!submenu) return; // nothing to toggle
+
+  // prevent navigation and toggle open state
+  e.preventDefault();
+  const opened = parentLi.classList.toggle("open");
+  // optionally close other open items
+  if (opened) {
+    document.querySelectorAll(".nav-links li.open").forEach((li) => {
+      if (li !== parentLi) li.classList.remove("open");
+    });
+  }
+});
+
 // Scroll Reveal
 const fadeSections = document.querySelectorAll(".fade-slide");
 window.addEventListener("scroll", () => {
