@@ -22,13 +22,15 @@
     gap: 2rem;
     align-items: center;
     justify-content: space-between;
-    padding: 0 1rem;
+    padding: min(2rem, 20%) 2rem;
     flex-wrap: wrap;
-     }  
+}
 
 .hero-left {
     flex: 1 1 420px;
     min-width: 260px;
+    padding: min(2rem, 20%) 2rem;
+
 }
 
 .hero-title {
