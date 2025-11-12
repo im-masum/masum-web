@@ -15,6 +15,7 @@
     --accent: #ff4b2b;
     --accent-gradient: linear-gradient(45deg, #ff4b2b, #ff416c);
     --nav-bg: rgba(255, 255, 255, 0.3);
+    --nav-links: #ffffff;
     --shadow: rgba(0, 0, 0, 0.1);
     --hero-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(223, 233, 243, 0.8) 100%);
 }
@@ -22,11 +23,11 @@
 body.dark {
     --bg: #050620;
     --text: #f1f1f1;
-    --muted: rgba(6, 41, 74, 0.72);
+    --muted: rgba(3, 26, 48, 0.72);
     --accent: #00c6ff;
-    --accent-rgb: 0, 198, 255;
     --accent-gradient: linear-gradient(45deg, #00c6ff, #0072ff);
     --nav-bg: rgba(0, 0, 0, 0.3);
+    --nav-links: #0a1427;
     --shadow: rgba(255, 255, 255, 0.08);
     --hero-gradient: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(15, 32, 39, 0.8) 100%);
 }
