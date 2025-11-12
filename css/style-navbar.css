@@ -110,11 +110,12 @@
 }
 
 /* Responsive: collapse nav into a slide-out panel on small screens */
-@media (max-width: 880px) {
+@media (max-width: 768px) {
     .navbar {
         padding: 12px 16px;
         background: rgb(74, 69, 69);
-        display: flex;
+        background-color: aqua;
+        
     }
 
     .nav-links {
@@ -143,14 +144,21 @@
     }
 
     .nav-links li {
+        text-align: center;
         width: 100%;
+        gap: 0;
+        background:rgb(226, 220, 220);
+        margin: 0 auto;
         border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+        border-radius: 10px;
+        padding: min(.2rem, );
+        margin-bottom: 10px;
     }
 
     .nav-links a {
         display: block;
         width: 100%;
-        padding: 0.9rem 0.75rem;
+        padding: 0.5rem 0.75rem;
     }
 
     .dropdown {
@@ -162,13 +170,13 @@
         gap: 0.25rem;
         border-radius: 6px;
         background: transparent;
-        box-shadow: none;
     }
 
     /* When parent li gets .open (toggled via JS), show its dropdown */
     .nav-links li.open>.dropdown {
         display: flex;
         flex-direction: column;
+        margin: 0 auto;
     }
 
     .nav-icons {
