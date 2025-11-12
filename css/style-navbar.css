@@ -113,6 +113,7 @@
 @media (max-width: 880px) {
     .navbar {
         padding: 12px 16px;
+        background: rgb(74, 69, 69);
     }
 
     .nav-links {
@@ -122,7 +123,7 @@
         right: -110%;
         width: 280px;
         height: calc(100% - 64px);
-        background: var(--nav-bg);
+        background: var(blue);
         backdrop-filter: blur(12px);
         flex-direction: column;
         gap: 0;
