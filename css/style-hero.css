@@ -213,10 +213,11 @@
 }
 
 .hero-right {
-    flex: 1 1 500px;
+    /* flex: 1 1 500px; */
     position: relative;
     animation: fadeSlideLeft 1s ease-out 0.4s backwards;
     perspective: 2000px;
+
 }
 
 .hero-card {
@@ -250,6 +251,7 @@
     box-shadow:
         0 35px 60px -15px rgba(0, 0, 0, 0.25),
         0 0 0 2px var(--accent);
+        
 }
 
 .hero-card:hover::before {

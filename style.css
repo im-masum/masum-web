@@ -27,7 +27,6 @@ body.dark {
     --muted: rgba(3, 26, 48, 0.72);
     --accent: #00c6ff;
     --accent-rgb: #0e1324;
-
     --accent-gradient: linear-gradient(45deg, #00c6ff, #0072ff);
     --nav-bg: rgba(0, 0, 0, 0.3);
     --nav-links: #0a1427;
