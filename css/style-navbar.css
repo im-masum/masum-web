@@ -145,9 +145,9 @@
 
     .nav-links li {
         text-align: center;
-        width: 100%;
+        width: 70%;
         gap: 0;
-        background:rgb(226, 220, 220);
+        background:var(--muted);
         margin: 0 auto;
         border-bottom: 1px solid rgba(255, 255, 255, 0.03);
         border-radius: 10px;
