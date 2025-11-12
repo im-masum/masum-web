@@ -57,18 +57,11 @@
 }
 
 /* Hero-specific button styles override base */
-.btn {
-    
-    border-radius: 12px;
-    font-weight: 600;
-    text-decoration: none;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
 
 .btn.primary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: var(--accent-gradient);
     color: white;
     box-shadow: 0 4px 15px rgba(255, 75, 43, 0.3);
@@ -88,6 +81,9 @@
 }
 
 .btn.outline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 2px solid var(--accent);
     color: var(--accent);
     background: transparent;
@@ -398,6 +394,7 @@
 
     .hero-ctas, .hero-meta {
         justify-content: center;
+        align-items: center;
     }
 
     .hero-right {
@@ -414,6 +411,7 @@
     .hero-ctas {
         flex-direction: column;
         align-items: stretch;
+        justify-content: center;
     }
 
     .hero-meta {
