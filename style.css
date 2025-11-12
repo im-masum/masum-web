@@ -11,9 +11,8 @@
 :root {
     --bg: #f5f2f2;
     --text: #111;
-    --muted: rgba(212, 188, 188, 0.65);
+    --muted: rgba(225, 223, 223, 0.65);
     --accent: #ff4b2b;
-    --accent-rgb: 255, 75, 43;
     --accent-gradient: linear-gradient(45deg, #ff4b2b, #ff416c);
     --nav-bg: rgba(255, 255, 255, 0.3);
     --shadow: rgba(0, 0, 0, 0.1);

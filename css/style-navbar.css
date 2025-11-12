@@ -119,15 +119,14 @@
     }
 
     .nav-links {
-        display: block;
+        display: flex;
         position: fixed;
-        top: 64px;
+        top: 68px;
         /* height of navbar (approx) */
         right: -110%;
-        width: 280px;
-        height: calc(100% - 64px);
-        background: var(blue);
-        /* backdrop-filter: blur(12px); */
+        width: 250px;
+        height: auto;
+        background:var(--nav-bg);
         flex-direction: column;
         gap: 0;
         padding: 1rem;
@@ -137,6 +136,9 @@
         box-shadow: -8px 0 30px rgba(0, 0, 0, 0.2);
         transition: right 0.35s cubic-bezier(0.4, 0, 0.2, 1);
         z-index: 1050;
+        border-bottom-left-radius: 14px;
+        border-bottom-right-radius: 14px;
+
     }
 
     .nav-links.active {
