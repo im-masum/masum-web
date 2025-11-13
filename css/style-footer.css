@@ -11,7 +11,7 @@
 }
 
 .footer-grid {
-    max-width: 1200px;
+    max-width: 1600px;
     width: 100%;
     margin: 0 auto;
     display: flex;
@@ -40,6 +40,9 @@
 .footer-contact {
     flex: 0 1 220px;
     min-width: 160px;
+    padding: min(1rem, 8%) 1rem;
+    background: var(--bg);
+    color: var(--text);
 }
 
 .footer-newsletter {
@@ -97,8 +100,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 1rem;
+    padding: min(1rem, 8%) 1rem;
+    max-width: 1600px;
+    width: 100%;
+
 }
+
 
 @media (max-width:560px) {
     .footer-bottom {
