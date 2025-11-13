@@ -46,9 +46,14 @@
     flex: 0 1 260px;
     min-width: 200px;
     display: block;
-    background-color: aqua;
     padding: min(1rem, 8%) 1rem;
-
+    
+}
+.newsletter-form input{
+    background-color: aqua;
+    padding: min(.5rem, 4%) 1rem;
+    border-radius: 12px;
+    margin-bottom: 1rem;   
 }
 
 .footer-brand .logo {
