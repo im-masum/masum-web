@@ -47,13 +47,13 @@
     min-width: 200px;
     display: block;
     padding: min(1rem, 8%) 1rem;
-    
+
 }
-.newsletter-form input{
-    
+
+.newsletter-form input {
     padding: min(.5rem, 4%) 1rem;
-    border-radius: 12px;
-    margin-bottom: 1rem;   
+    border-radius: 8px;
+    margin-bottom: 1rem;
 }
 
 .footer-brand .logo {
@@ -67,6 +67,11 @@
 .footer-nav h4, .footer-contact h4, .footer-newsletter h4 {
     margin-bottom: .45rem;
     font-size: .95rem;
+}
+
+.footer-nav {
+    padding: min(1rem, 8%) 1rem;
+
 }
 
 .footer-nav ul {
