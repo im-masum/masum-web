@@ -22,6 +22,7 @@
     padding: 0 1rem;
     background: var(--bg);
     color: var(--text);
+    flex-wrap: wrap;
 }
 
 .footer-brand {
@@ -50,6 +51,8 @@
     min-width: 200px;
     display: block;
     padding: min(1rem, 8%) 1rem;
+    box-shadow: 4px 10px 20px rgba(178, 173, 173, 0.04);
+    border-radius: 8px;
 
 }
 
