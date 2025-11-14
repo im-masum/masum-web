@@ -49,27 +49,3 @@
     opacity: 0 !important;
 }
 
-/* Back-to-top button */
-#backToTop {
-    position: fixed;
-    right: 18px;
-    bottom: 18px;
-    display: inline-block;
-    opacity: 0;
-    transform: translateY(8px);
-    transition: opacity 0.25s ease, transform 0.25s ease;
-    z-index: 1200;
-    background: var(--nav-bg);
-    border: 1px solid rgba(0, 0, 0, 0.06);
-    padding: 8px 10px;
-    border-radius: 8px;
-}
-
-#backToTop.visible {
-    opacity: 1;
-    transform: none;
-}
-
-#backToTop:focus {
-    outline: 3px solid var(--accent);
-}
