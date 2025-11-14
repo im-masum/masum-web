@@ -138,6 +138,8 @@
 
 
 @media (max-width:768px) {
+    
+
     .footer-grid {
         display: flex;
         flex-direction: column;
@@ -148,9 +150,17 @@
         width: 100%;
         height: auto;
     }
+    .footer-newsletter{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+    }
 
     .newsletter-form {
         margin-top: 20px;
+        gap: 10px;
 
     }
 
