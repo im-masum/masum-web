@@ -39,11 +39,14 @@
 }
 
 .footer-contact {
-    flex: 0 1 220px;
+    flex: 0 1 280px;
     min-width: 160px;
     padding: min(1rem, 8%) 1rem;
     background: var(--bg);
     color: var(--text);
+    box-shadow: 5px 10px 20px rgba(211, 204, 204, 0.04);
+    border-radius: 10px;
+    border: 1px solid rgba(105, 102, 102, 0.1);
 }
 
 .footer-newsletter {
@@ -53,7 +56,7 @@
     padding: min(1rem, 8%) 1rem;
     box-shadow: 5px 10px 20px rgba(211, 204, 204, 0.04);
     border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(105, 102, 102, 0.1);
 
 
 }
