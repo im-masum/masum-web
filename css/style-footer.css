@@ -17,10 +17,9 @@
     margin: 0 auto;
     display: flex;
     gap: 2rem;
-    /* align-items: flex-start; */
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: min(1rem, 8%)1rem;
+    padding: min(2rem, 16%) 2rem;
     background: var(--bg);
     color: var(--text);
     flex-wrap: wrap;
@@ -30,11 +29,16 @@
 }
 
 .footer-brand {
-    flex: 1 1 280px;
-    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 500px;
+    max-width: 100%;
+    height: auto;
     background: var(--bg);
     color: var(--accent);
-    padding: min(1rem, 8%) 1rem;
+    padding: min(2rem, 16%) 2rem;
     box-shadow: 5px 10px 20px rgba(211, 204, 204, 0.04);
     border-radius: 10px;
     border: 1px solid rgba(105, 102, 102, 0.1);
