@@ -4,13 +4,14 @@
     max-width: 100%;
     margin: 0 auto;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     min-height: 80vh;
     padding: 120px 0 60px;
     position: relative;
     overflow: hidden;
     background-position: center;
     background-size: cover;
+    background-color: #22c55e;
 }
 
 .hero-inner {
@@ -24,6 +25,7 @@
     justify-content: space-between;
     padding: min(2rem, 20%) 2rem;
     flex-wrap: wrap;
+    background-color: aqua;
 }
 
 .hero-left {
@@ -282,7 +284,7 @@
 }
 
 .card-content img {
-    width: 50%;
+    width: 100%;
     height: auto;
     display: block;
     transition: transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
