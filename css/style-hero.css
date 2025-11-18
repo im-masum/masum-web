@@ -13,7 +13,7 @@
     background-size: cover;
     
 }
-/* 
+ 
 .hero-inner {
     max-width: 100%;
     width: 95%;
@@ -24,7 +24,7 @@
     justify-content: space-between;
     padding: min(2rem, 20%) 2rem;
     
-} */
+} 
 
 .hero-left {
     flex: 1 1 420px;
