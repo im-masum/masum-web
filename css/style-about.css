@@ -11,11 +11,12 @@
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    max-width: 1200px;
+    max-width: 100%;
     background: var(--bg);
-    gap: 1rem;
+    gap: 4rem;
     margin: 0 auto;
     padding: min(2rem, 16%) 2rem;
+    background-color: aqua;
 
     
 }
