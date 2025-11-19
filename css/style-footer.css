@@ -143,13 +143,18 @@
 
 .footer-bottom {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     padding: min(1rem, 8%) 1rem;
-    max-width: 1600px;
+    max-width: 100%;
     width: 100%;
-    background-color: rgb(186, 198, 198);
+    background-color: var(--bg);
+    color: var(--text);
+    box-shadow: 5px 10px 20px rgba(211, 204, 204, 0.04);
     border-radius: 10px;
+    border: 1px solid rgba(105, 102, 102, 0.1);
+    margin: 20px 0;
+
 
 }
 

@@ -82,9 +82,6 @@ section {
 
 /* Back-to-top button */
 #backToTop {
-    position: fixed;
-    right: 40px;
-    bottom: 40px;
     display: inline-block;
     opacity: 0;
     transform: translateY(8px);
