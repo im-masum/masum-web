@@ -4,16 +4,16 @@
     max-width: 100%;
     margin: 0 auto;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     min-height: 80vh;
     padding: 120px 0 60px;
     position: relative;
     overflow: hidden;
     background-position: center;
     background-size: cover;
-    
+
 }
- 
+
 .hero-inner {
     max-width: 100%;
     width: 100%;
@@ -23,8 +23,8 @@
     align-items: center;
     justify-content: space-between;
     padding: min(2rem, 20%) 2rem;
-    
-} 
+
+}
 
 .hero-left {
     max-width: 100%;
@@ -315,7 +315,7 @@
 }
 
 .card-badge {
-    
+
     position: absolute;
     top: 1.5rem;
     right: 1.5rem;
@@ -460,4 +460,111 @@
     background-clip: text;
     -webkit-text-fill-color: transparent;
     display: inline-block;
+}
+
+/* Additional responsive tweaks for the hero section */
+@media (max-width: 880px) {
+    .hero-inner {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        padding: 2rem;
+    }
+
+    .hero-left,
+    .hero-right {
+        width: 100%;
+        max-width: 820px;
+        padding: 1rem;
+    }
+
+    /* Put the card above the text content on small screens for a stronger visual */
+    .hero-right {
+        order: 1;
+    }
+
+    .hero-left {
+        order: 2;
+        text-align: center;
+    }
+
+    .hero-title {
+        font-size: clamp(1.8rem, 6vw, 2.8rem);
+        line-height: 1.15;
+    }
+
+    .hero-lead {
+        font-size: clamp(1rem, 3.5vw, 1.15rem);
+    }
+
+    .hero-card {
+        width: min(460px, 92%);
+        margin: 0 auto;
+    }
+
+    .hero-ctas {
+        justify-content: center;
+    }
+
+    .hero-meta {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 640px) {
+    .hero {
+        padding: 80px 1rem 40px;
+        min-height: 60vh;
+    }
+
+    .hero-inner {
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .hero-left {
+        padding: 0.5rem 0;
+    }
+
+    .hero-ctas {
+        gap: 1rem;
+    }
+
+    /* Reduce decorative elements on very small screens for performance */
+    .hero-bg-shapes {
+        display: none;
+    }
+}
+
+/* Disable floating animation and hover-heavy transforms on touch/low-motion devices */
+@media (hover: none) {
+
+    .hero-card,
+    .social-link {
+        animation: none !important;
+        transition: none !important;
+    }
+
+    .hero-card:hover {
+        transform: none !important;
+        box-shadow: 0 18px 36px rgba(0, 0, 0, 0.12);
+    }
+
+    .social-link:hover {
+        transform: none !important;
+        box-shadow: none !important;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    .hero-card,
+    .hero-title,
+    .hero-lead,
+    .social-link,
+    .shape {
+        animation: none !important;
+        transition: none !important;
+    }
 }
