@@ -487,12 +487,13 @@
 
     /* Put the card above the text content on small screens for a stronger visual */
     .hero-right {
-        /* order: 1; */
+        margin-top: 2rem;
     }
 
     .hero-left {
-        /* order: 2; */
+        align-items: center;
         text-align: center;
+
     }
 
     .hero-title {
