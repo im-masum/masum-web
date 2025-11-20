@@ -1,10 +1,9 @@
 /* style-about.css */
 .about-section {
     display: flex;
-    padding: min(2rem, 20%) 2rem;
+    padding: min(2rem, 16%) 2rem;
     width: 100%;
     max-width: 100%;
-    background: red;
 }
 
 .about-container {
@@ -43,12 +42,14 @@
     align-items: center;
     text-align: center;
     border: 1px solid rgba(255, 255, 255, 0.04);
+    background-color: aqua;
+    margin: 20px 0;
 }
 
 .about-profile img {
     width: 100%;
     max-width: 500px;
-    background-color: aqua;
+    background-color: blue;
     height: auto;
     border-radius: 12px;
     display: block;
