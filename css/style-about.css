@@ -2,7 +2,9 @@
 .about-section {
     display: flex;
     padding: min(2rem, 20%) 2rem;
-    background: var(--shadow);
+    background-color: aqua;
+    width: 100%;
+    max-width: 100%;
 }
 
 .about-container {
@@ -14,7 +16,6 @@
     max-width: 100%;
     background: var(--bg);
     gap: 4rem;
-    margin: 0 auto;
     padding: min(2rem, 16%) 2rem;
     background-color: aqua;
 
@@ -27,6 +28,8 @@
 }
 
 .about-grid {
+    width: 100%;
+    max-width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
