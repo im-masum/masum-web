@@ -17,10 +17,13 @@
     padding: min(2rem, 16%) 2rem;
 
 }
-.about-header{
+
+.about-header {
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding: min(2rem, 16%) 2rem;
+
 }
 
 .about-grid {
@@ -148,6 +151,3 @@
         flex: 0 0 120px;
     }
 }
-
-
-
