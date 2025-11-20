@@ -36,7 +36,7 @@
 
 .about-profile {
     border-radius: 16px;
-    padding: 1rem;
+    padding: min(2rem, 16%) 2rem;
     display: flex;
     gap: 1rem;
     flex-direction: column;
@@ -47,6 +47,7 @@
 
 .about-profile img {
     width: 100%;
+    max-width: 500px;
     background-color: aqua;
     height: auto;
     border-radius: 12px;
