@@ -45,22 +45,20 @@
     border-radius: 16px;
     padding: min(2rem, 16%) 2rem;
     display: flex;
-    gap: 1rem;
     flex-direction: column;
     align-items: center;
     text-align: center;
     border: 1px solid rgba(255, 255, 255, 0.04);
-    margin: 20px 0;
+    background-color: aqua;
 }
 
 .about-profile img {
     width: 100%;
-    max-width: 500px;
-    background-color: blue;
-    height: auto;
+    max-width: 400px;
+    height: 100%;
     border-radius: 12px;
     display: block;
-    padding: min(2rem, 16%) 2rem;
+    
 
 }
 
@@ -85,11 +83,15 @@
 }
 
 .profile-links {
-    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    display: inline-flex;
     gap: 0.5rem;
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 0.75rem;
+    background-color: blue;
+    padding: min(1rem, 8%) 1rem;
 }
 
 .about-content h4 {
