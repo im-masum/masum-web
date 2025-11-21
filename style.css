@@ -55,7 +55,7 @@ section {
 .btn {
     background: var(--accent);
     color: var(--text);
-    padding: min(.5rem, 8%) 1rem;
+    padding: min(.5rem, 8%) 2rem;
     border: none;
     border-radius: 25px;
     cursor: pointer;
