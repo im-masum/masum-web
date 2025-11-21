@@ -4,6 +4,8 @@
     padding: min(2rem, 16%) 2rem;
     width: 100%;
     max-width: 100%;
+    align-items: center;
+    justify-content: center;
 }
 
 .about-container {
