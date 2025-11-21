@@ -23,6 +23,7 @@
 .about-header {
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
     padding: min(2rem, 16%) 2rem;
 
@@ -36,6 +37,8 @@
     justify-content: center;
     align-items: center;
     gap: 2rem;
+    padding: min(2rem, 16%) 2rem;
+
 }
 
 .about-profile {
@@ -47,7 +50,6 @@
     align-items: center;
     text-align: center;
     border: 1px solid rgba(255, 255, 255, 0.04);
-    background-color: aqua;
     margin: 20px 0;
 }
 
@@ -58,6 +60,8 @@
     height: auto;
     border-radius: 12px;
     display: block;
+    padding: min(2rem, 16%) 2rem;
+
 }
 
 .profile-meta h3 {
