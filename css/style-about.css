@@ -77,12 +77,12 @@
 
 .profile-stats {
     display: flex;
-    background-color: aqua;
-    gap: 0.75rem;
-    margin: 0.75rem 0;
+    gap: 5rem;
+    margin-top: 1rem;
     padding: 0;
     list-style: none;
     align-items: center;
+    justify-content: center;
 }
 
 .profile-stats li {
