@@ -53,17 +53,24 @@
 .projects-row {
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     gap: 2rem;
-    padding: 1rem;
+    padding: min(2rem, 16%) 2rem;
 }
 
 .project-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
     background: rgba(255, 255, 255, 0.03);
     border-radius: 16px;
     overflow: hidden;
     transform: translateY(0);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .project-card:hover {
