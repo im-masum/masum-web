@@ -12,11 +12,14 @@
     font-weight: 700;
     text-align: center;
     margin-bottom: 3rem;
+    padding: min(1rem, 8%) 2rem;
 }
 
 .projects-filters {
     display: flex;
     justify-content: center;
+    align-items: center;
+    padding: min(1rem, 8%) 2rem;
     gap: 1rem;
     margin-bottom: 3rem;
     flex-wrap: wrap;
