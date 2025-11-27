@@ -1,12 +1,15 @@
 /* style-projects.css */
 .projects-section {
-    padding: 5rem 0;
+    display: flex;
+    padding: min(2rem, 16%) 2rem;
     background: var(--bg);
     position: relative;
     overflow: hidden;
 }
 
 .projects-header {
+    font-size: 1.5rem;
+    font-weight: 700;
     text-align: center;
     margin-bottom: 3rem;
 }
@@ -71,7 +74,7 @@
     transform: translateY(0);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     border: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .project-card:hover {
