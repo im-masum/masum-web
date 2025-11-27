@@ -64,7 +64,8 @@
     flex-direction: column;
     width: 100%;
     max-width: 500px;
-    background: rgba(255, 255, 255, 0.03);
+    background: var(--bg);
+    color: var(--text);
     border-radius: 16px;
     overflow: hidden;
     transform: translateY(0);
@@ -110,7 +111,7 @@
 }
 
 .view-project {
-    color: white;
+    color: var(--text);
     font-weight: 600;
     transform: translateY(20px);
     transition: transform 0.3s ease;
