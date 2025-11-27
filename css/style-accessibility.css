@@ -1,5 +1,4 @@
-/* style-accessibility.css - skip link, focus-visible, honeypot, back-to-top */
-/* Skip link: hidden off-canvas and visible when focused */
+
 .skip-link {
     position: absolute;
     left: -9999px;
