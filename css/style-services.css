@@ -16,7 +16,7 @@
     align-items: center;
     justify-content: center;
     background: var(--bg);
-    padding: min(1rem, 8%) 2rem;
+    padding: min(2rem, 16%) 2rem;
     text-align: center;
     width: 100%;
     max-width: 100%;
