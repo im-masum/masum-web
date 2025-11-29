@@ -190,15 +190,17 @@
 }
 
 .services-cta {
+    display: flex;
     text-align: center;
     margin-top: 60px;
     padding: 40px;
-    background: rgba(255, 255, 255, 0.05);
+    /* background: var(--bg-secondary); */
     border-radius: 20px;
     backdrop-filter: blur(10px);
     opacity: 0;
     transform: translateY(30px);
     animation: fadeSlideUp 0.8s ease-out 1.2s forwards;
+    background-color: brown;
 }
 
 @media (max-width: 992px) {
