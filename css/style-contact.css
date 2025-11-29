@@ -104,8 +104,10 @@
 
 /* floating label fields */
 .form-row {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
+    background: var(--bg);
+    color: var(--text);
     gap: .6rem;
 }
 
@@ -113,6 +115,8 @@
     position: relative;
     margin-bottom: .75rem;
     display: block;
+    background: var(--bg);
+    color: var(--text);
 }
 
 .form-field input, .form-field textarea {
