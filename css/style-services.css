@@ -190,17 +190,22 @@
 }
 
 .services-cta {
+    width: 100%;
+    max-width: 100%;
+    gap: 2rem;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    margin-top: 60px;
-    padding: 40px;
-    /* background: var(--bg-secondary); */
+    margin-top: 20px;
+    padding: min(2rem, 16%) 2rem;
+    background: var(--bg-secondary);
     border-radius: 20px;
     backdrop-filter: blur(10px);
     opacity: 0;
     transform: translateY(30px);
     animation: fadeSlideUp 0.8s ease-out 1.2s forwards;
-    background-color: brown;
 }
 
 @media (max-width: 992px) {
