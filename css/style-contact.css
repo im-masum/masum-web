@@ -108,7 +108,7 @@
     flex-direction: column;
     background: var(--bg);
     color: var(--text);
-    gap: .6rem;
+    gap: 1rem;
 } 
 
 .form-field {
@@ -128,6 +128,7 @@
     color: var(--text);
     resize: vertical;
     transition: box-shadow .18s, transform .12s;
+    font-size: 1rem;
 }
 
 .form-field .label {
