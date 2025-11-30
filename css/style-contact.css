@@ -103,13 +103,13 @@
 }
 
 /* floating label fields */
-/* .form-row {
+ .form-row {
     display: flex;
     flex-direction: column;
     background: var(--bg);
     color: var(--text);
     gap: .6rem;
-} */
+} 
 
 .form-field {
     position: relative;
