@@ -25,7 +25,10 @@
 }
 
 .section-subtitle {
-    color: var(--accent);
+    color: transparent;
+    background: linear-gradient(45deg, #5e04b8, #fb5907);
+    -webkit-background-clip: text;
+    background-clip: text;
     font-size: 2rem;
     font-weight: 600;
     text-transform: uppercase;
@@ -36,12 +39,13 @@
     transform: translateY(20px);
     animation: fadeSlideUp 0.8s ease-out forwards;
 }
+
 .section-subtitle::after {
     content: '';
     display: block;
     width: 100px;
     height: 4px;
-    background: var(--accent);
+    background: var(--accent-gradient);
     margin: 10px auto 0;
     border-radius: 2px;
 
