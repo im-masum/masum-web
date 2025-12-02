@@ -12,10 +12,10 @@
     --bg-primary: #ffffff;
     --bg: #f5f2f2;
     --text: #111;
-    --muted: rgba(112, 14, 5, 0.591);
-    --accent: #611508;
+    --muted: rgba(253, 38, 19, 0.933);
+    --accent: #ff0909;
     --accent-rgb: #dbd1d1;
-    --accent-gradient: linear-gradient(45deg, #5e04b8, #229bff);
+    --accent-gradient: linear-gradient(45deg, #5e04b8, #fb5907);
     --nav-bg: rgba(255, 255, 255, 0.3);
     --nav-links: #ffffff;
     --shadow: rgba(0, 0, 0, 0.1);
@@ -29,7 +29,7 @@ body.dark {
     --muted: rgba(3, 26, 48, 0.72);
     --accent: #00c6ff;
     --accent-rgb: #0e1324;
-    --accent-gradient: linear-gradient(45deg, #00c6ff, #0072ff);
+    --accent-gradient: linear-gradient(45deg, #ff1100, #0072ff, #00c6ff);
     --nav-bg: rgba(0, 0, 0, 0.3);
     --nav-links: #0a1427;
     --shadow: rgba(255, 255, 255, 0.08);
@@ -51,6 +51,7 @@ section {
     padding: min(2rem, 20%) 2rem;
     margin: 20px 10px;
     border-radius: 20px;
+    background: var(--bg-primary);
 
 }
 
