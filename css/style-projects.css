@@ -47,6 +47,8 @@
     color: var(--text);
     opacity: 0.8;
     margin-top: 1rem;
+    line-height: 1.6;
+}
 .projects-filters {
     display: flex;
     justify-content: center;
