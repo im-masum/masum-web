@@ -102,13 +102,13 @@
 }
 
 /* floating label fields */
- .form-row {
+.form-row {
     display: flex;
     flex-direction: column;
     background: var(--bg);
     color: var(--text);
     gap: 1rem;
-} 
+}
 
 .form-field {
     position: relative;
@@ -194,20 +194,439 @@
     animation: shake .48s cubic-bezier(.36, .07, .19, .97);
 }
 
-@media (max-width: 920px) {
-    .contact-grid {
-        flex-direction: column;
+/* Responsive for medium screens and tablets */
+@media (max-width: 992px) {
+    .contact-section {
+        padding: 3rem 1.5rem;
     }
 
-    .form-row {
-        grid-template-columns: 1fr;
+    .contact-grid {
+        gap: 1.5rem;
+        padding: 1.5rem;
+    }
+
+    .contact-card {
+        flex: 1 1 280px;
+        padding: 1.5rem;
+    }
+
+    .contact-form {
+        flex: 1 1 450px;
+        padding: 1.5rem;
+    }
+
+    .form-field input,
+    .form-field textarea {
+        font-size: 1rem;
+    }
+}
+
+/* Responsive for small tablets and landscape phones */
+@media (max-width: 920px) {
+    .contact-section {
+        padding: 2.5rem 1rem;
+    }
+
+    .contact-grid {
+        flex-direction: column;
+        gap: 1.25rem;
+        padding: 1rem;
     }
 
     .contact-card {
         order: 2;
+        width: 100%;
+        max-width: 520px;
+        margin: 0 auto;
+        flex: 1 1 auto;
+        padding: 1.25rem;
     }
 
     .contact-form {
         order: 1;
+        width: 100%;
+        max-width: 520px;
+        margin: 0 auto;
+        flex: 1 1 auto;
+        padding: 1.25rem;
+    }
+
+    .contact-methods {
+        gap: 0.5rem;
+    }
+
+    .contact-method i {
+        width: 32px;
+        height: 32px;
+        font-size: 1.1rem;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .form-field input,
+    .form-field textarea {
+        font-size: 0.95rem;
+        padding: 0.75rem 1rem;
+    }
+
+    .btn {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.95rem;
+    }
+
+    .contact-feedback {
+        min-width: 150px;
+        margin-left: 0.4rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* Responsive for portrait tablets and large phones */
+@media (max-width: 768px) {
+    .contact-section {
+        padding: 2rem 0.75rem;
+    }
+
+    .contact-grid {
+        gap: 1rem;
+        padding: 0.75rem;
+    }
+
+    .contact-card {
+        padding: 1rem;
+        border-radius: 10px;
+    }
+
+    .contact-form {
+        padding: 1rem;
+        border-radius: 10px;
+    }
+
+    .contact-card h3 {
+        font-size: 1.1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .contact-methods {
+        gap: 0.4rem;
+        margin: 0.4rem 0 0.75rem;
+    }
+
+    .contact-method {
+        gap: 0.5rem;
+    }
+
+    .contact-method i {
+        width: 28px;
+        height: 28px;
+        font-size: 1rem;
+    }
+
+    .contact-method span {
+        font-size: 0.9rem;
+    }
+
+    .contact-info {
+        margin: 0.4rem 0 0.75rem;
+        gap: 0.4rem;
+    }
+
+    .contact-info li {
+        font-size: 0.9rem;
+        gap: 0.4rem;
+    }
+
+    .contact-actions {
+        gap: 0.4rem;
+        justify-content: center;
+    }
+
+    .form-field {
+        margin-bottom: 0.75rem;
+    }
+
+    .form-field label {
+        font-size: 0.9rem;
+    }
+
+    .form-field input,
+    .form-field textarea {
+        font-size: 0.9rem;
+        padding: 0.65rem 0.9rem;
+    }
+
+    .btn {
+        padding: 0.65rem 1.2rem;
+        font-size: 0.9rem;
+    }
+
+    .btn-spinner {
+        width: 14px;
+        height: 14px;
+        border-width: 1.5px;
+        margin-left: 6px;
+    }
+
+    .contact-feedback {
+        font-size: 0.85rem;
+        margin-left: 0.3rem;
+        min-width: 130px;
+    }
+}
+
+/* Responsive for small phones */
+@media (max-width: 640px) {
+    .contact-section {
+        padding: 1.5rem 0.5rem;
+    }
+
+    .contact-grid {
+        gap: 0.75rem;
+        padding: 0.5rem;
+    }
+
+    .contact-card {
+        padding: 0.9rem;
+        border-radius: 8px;
+        min-width: 200px;
+    }
+
+    .contact-form {
+        padding: 0.9rem;
+        border-radius: 8px;
+    }
+
+    .contact-card h3 {
+        font-size: 1rem;
+        margin-bottom: 0.4rem;
+    }
+
+    .contact-card p {
+        font-size: 0.85rem;
+    }
+
+    .contact-methods {
+        gap: 0.35rem;
+        margin: 0.35rem 0 0.6rem;
+    }
+
+    .contact-method {
+        gap: 0.4rem;
+    }
+
+    .contact-method i {
+        width: 24px;
+        height: 24px;
+        font-size: 0.9rem;
+    }
+
+    .contact-method strong {
+        font-size: 0.9rem;
+    }
+
+    .contact-method span {
+        font-size: 0.8rem;
+    }
+
+    .contact-info {
+        margin: 0.35rem 0 0.6rem;
+        gap: 0.35rem;
+    }
+
+    .contact-info li {
+        font-size: 0.8rem;
+        gap: 0.35rem;
+    }
+
+    .contact-actions {
+        gap: 0.3rem;
+        flex-wrap: wrap;
+    }
+
+    .contact-actions a {
+        font-size: 0.8rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    .form-field {
+        margin-bottom: 0.6rem;
+    }
+
+    .form-field label {
+        font-size: 0.85rem;
+    }
+
+    .form-field input,
+    .form-field textarea {
+        font-size: 0.85rem;
+        padding: 0.6rem 0.8rem;
+    }
+
+    .form-field textarea {
+        min-height: 100px;
+    }
+
+    .btn {
+        padding: 0.6rem 1rem;
+        font-size: 0.85rem;
+        width: 100%;
+    }
+
+    .btn-spinner {
+        width: 12px;
+        height: 12px;
+        border-width: 1px;
+        margin-left: 4px;
+    }
+
+    .contact-feedback {
+        font-size: 0.8rem;
+        margin-left: 0;
+        min-width: 100%;
+        margin-top: 0.5rem;
+    }
+
+    .contact-form.shake {
+        animation: shake 0.4s cubic-bezier(0.36, 0.07, 0.19, 0.97);
+    }
+}
+
+/* Extra small phones and foldable devices */
+@media (max-width: 480px) {
+    .contact-section {
+        padding: 1rem 0.3rem;
+    }
+
+    .contact-grid {
+        gap: 0.5rem;
+        padding: 0.3rem;
+    }
+
+    .contact-card {
+        padding: 0.75rem;
+        border-radius: 6px;
+    }
+
+    .contact-form {
+        padding: 0.75rem;
+        border-radius: 6px;
+    }
+
+    .contact-card h3 {
+        font-size: 0.95rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .contact-card p {
+        font-size: 0.8rem;
+    }
+
+    .contact-methods {
+        gap: 0.3rem;
+        margin: 0.3rem 0 0.5rem;
+    }
+
+    .contact-method {
+        gap: 0.35rem;
+        font-size: 0.8rem;
+    }
+
+    .contact-method i {
+        width: 20px;
+        height: 20px;
+        font-size: 0.8rem;
+    }
+
+    .contact-method strong {
+        font-size: 0.8rem;
+    }
+
+    .contact-method span {
+        font-size: 0.75rem;
+    }
+
+    .contact-info {
+        margin: 0.3rem 0 0.5rem;
+        gap: 0.3rem;
+    }
+
+    .contact-info li {
+        font-size: 0.75rem;
+        gap: 0.3rem;
+    }
+
+    .contact-actions {
+        gap: 0.25rem;
+    }
+
+    .contact-actions a {
+        font-size: 0.75rem;
+        padding: 0.3rem 0.6rem;
+    }
+
+    .form-field {
+        margin-bottom: 0.5rem;
+    }
+
+    .form-field label {
+        font-size: 0.8rem;
+    }
+
+    .form-field input,
+    .form-field textarea {
+        font-size: 0.8rem;
+        padding: 0.5rem 0.7rem;
+    }
+
+    .form-field textarea {
+        min-height: 80px;
+    }
+
+    .btn {
+        padding: 0.5rem 0.8rem;
+        font-size: 0.8rem;
+    }
+
+    .btn-spinner {
+        width: 10px;
+        height: 10px;
+        border-width: 1px;
+        margin-left: 3px;
+    }
+
+    .contact-feedback {
+        font-size: 0.75rem;
+        margin-top: 0.4rem;
+    }
+}
+
+/* Touch devices: disable hover animations */
+@media (hover: none) {
+
+    .contact-card,
+    .form-field input,
+    .form-field textarea,
+    .btn {
+        transition: none !important;
+    }
+
+    .form-field input:focus,
+    .form-field textarea:focus {
+        transform: none !important;
+    }
+}
+
+/* Accessibility: Respect reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+
+    .form-field input,
+    .form-field textarea,
+    .btn,
+    .contact-form.shake {
+        animation: none !important;
+        transition: none !important;
     }
 }

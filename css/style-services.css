@@ -212,32 +212,364 @@
     animation: fadeSlideUp 0.8s ease-out 1.2s forwards;
 }
 
+/* Responsive for medium screens and tablets */
 @media (max-width: 992px) {
-    .featured {
-        grid-column: auto;
-    }
-
-    .services-grid {
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 20px;
-        padding: 10px;
-    }
-}
-
-@media (max-width: 768px) {
     .services-section {
-        padding: 60px 0;
+        padding: 3rem 1.5rem;
     }
 
     .services-header {
-        margin-bottom: 40px;
+        padding: 2rem 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .section-subtitle {
+        font-size: 1.75rem;
+        letter-spacing: 1.5px;
+        margin-bottom: 0.75rem;
+    }
+
+    .section-subtitle::after {
+        width: 80px;
+        height: 3px;
     }
 
     .section-title {
-        font-size: 2rem;
+        font-size: clamp(1.75rem, 5vw, 2.5rem);
+        margin-bottom: 1.25rem;
+    }
+
+    .section-description {
+        font-size: 1.1rem;
+    }
+
+    .services-grid {
+        gap: 1.5rem;
+        padding: 1.5rem;
+    }
+
+    .service-card {
+        max-width: 450px;
+    }
+
+    .featured {
+        grid-column: auto;
+    }
+}
+
+/* Responsive for small tablets and landscape phones */
+@media (max-width: 880px) {
+    .services-section {
+        padding: 2.5rem 1rem;
+    }
+
+    .services-header {
+        padding: 1.5rem 1rem;
+        margin-bottom: 1.5rem;
+        border-bottom: 3px solid rgba(194, 184, 184, 0.1);
+    }
+
+    .section-subtitle {
+        font-size: 1.5rem;
+        letter-spacing: 1.2px;
+        margin-bottom: 0.5rem;
+    }
+
+    .section-subtitle::after {
+        width: 70px;
+        height: 2px;
+        margin: 8px auto 0;
+    }
+
+    .section-title {
+        font-size: clamp(1.5rem, 6vw, 2rem);
+        margin-bottom: 1rem;
+    }
+
+    .section-description {
+        font-size: 1rem;
+    }
+
+    .services-grid {
+        flex-wrap: wrap;
+        gap: 1.25rem;
+        padding: 1rem;
+    }
+
+    .service-card {
+        width: 100%;
+        max-width: 520px;
+        border-radius: 16px;
     }
 
     .service-content {
-        padding: 20px;
+        padding: 1.5rem;
+    }
+
+    .service-icon {
+        font-size: 2rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .service-title {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .service-description {
+        font-size: 0.95rem;
+    }
+
+    .service-features {
+        margin: 0.75rem 0;
+    }
+
+    .service-features li {
+        font-size: 0.9rem;
+        margin: 0.4rem 0;
+    }
+
+    .featured {
+        grid-column: auto;
+    }
+}
+
+/* Responsive for portrait tablets and large phones */
+@media (max-width: 768px) {
+    .services-section {
+        padding: 2rem 0.75rem;
+    }
+
+    .services-header {
+        padding: 1.25rem 0.75rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .section-subtitle {
+        font-size: 1.3rem;
+        letter-spacing: 1px;
+        margin-bottom: 0.4rem;
+    }
+
+    .section-subtitle::after {
+        width: 60px;
+        height: 2px;
+    }
+
+    .section-title {
+        font-size: clamp(1.3rem, 7vw, 1.8rem);
+        margin-bottom: 0.75rem;
+    }
+
+    .section-description {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+
+    .services-grid {
+        gap: 1rem;
+        padding: 0.75rem;
+    }
+
+    .service-card {
+        max-width: 100%;
+        border-radius: 14px;
+    }
+
+    .service-content {
+        padding: 1.25rem;
+    }
+
+    .service-icon {
+        font-size: 1.75rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .service-title {
+        font-size: 1.1rem;
+        margin-bottom: 0.35rem;
+    }
+
+    .service-description {
+        font-size: 0.9rem;
+    }
+
+    .service-features li {
+        font-size: 0.85rem;
+    }
+
+    .service-link {
+        font-size: 0.9rem;
+        margin-top: 0.75rem;
+    }
+}
+
+/* Responsive for small phones */
+@media (max-width: 640px) {
+    .services-section {
+        padding: 1.5rem 0.5rem;
+    }
+
+    .services-header {
+        padding: 1rem 0.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .section-subtitle {
+        font-size: 1.1rem;
+        letter-spacing: 0.8px;
+        margin-bottom: 0.3rem;
+    }
+
+    .section-subtitle::after {
+        width: 50px;
+        height: 2px;
+        margin: 6px auto 0;
+    }
+
+    .section-title {
+        font-size: clamp(1.1rem, 8vw, 1.6rem);
+        margin-bottom: 0.5rem;
+        line-height: 1.1;
+    }
+
+    .section-description {
+        font-size: 0.9rem;
+    }
+
+    .services-grid {
+        gap: 0.75rem;
+        padding: 0.5rem;
+    }
+
+    .service-card {
+        border-radius: 12px;
+    }
+
+    .service-content {
+        padding: 1rem;
+    }
+
+    .service-icon {
+        font-size: 1.5rem;
+        margin-bottom: 0.4rem;
+    }
+
+    .service-title {
+        font-size: 1rem;
+        margin-bottom: 0.25rem;
+    }
+
+    .service-description {
+        font-size: 0.85rem;
+        line-height: 1.4;
+    }
+
+    .service-features {
+        margin: 0.5rem 0;
+    }
+
+    .service-features li {
+        font-size: 0.8rem;
+        margin: 0.3rem 0;
+    }
+
+    .service-link {
+        font-size: 0.85rem;
+        margin-top: 0.5rem;
+    }
+}
+
+/* Extra small phones and foldable devices */
+@media (max-width: 480px) {
+    .services-section {
+        padding: 1rem 0.3rem;
+    }
+
+    .services-header {
+        padding: 0.75rem 0.3rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .section-subtitle {
+        font-size: 0.95rem;
+        letter-spacing: 0.6px;
+        margin-bottom: 0.25rem;
+    }
+
+    .section-subtitle::after {
+        width: 40px;
+        height: 1px;
+        margin: 4px auto 0;
+    }
+
+    .section-title {
+        font-size: clamp(0.95rem, 9vw, 1.4rem);
+        margin-bottom: 0.4rem;
+    }
+
+    .section-description {
+        font-size: 0.85rem;
+    }
+
+    .services-grid {
+        gap: 0.5rem;
+        padding: 0.3rem;
+    }
+
+    .service-card {
+        border-radius: 10px;
+    }
+
+    .service-content {
+        padding: 0.75rem;
+    }
+
+    .service-icon {
+        font-size: 1.25rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .service-title {
+        font-size: 0.95rem;
+        margin-bottom: 0.2rem;
+    }
+
+    .service-description {
+        font-size: 0.8rem;
+    }
+
+    .service-features li {
+        font-size: 0.75rem;
+        margin: 0.2rem 0;
+    }
+
+    .service-link {
+        font-size: 0.8rem;
+        margin-top: 0.4rem;
+    }
+}
+
+/* Touch devices: disable hover animations */
+@media (hover: none) {
+    .service-card {
+        transition: box-shadow 0.3s ease !important;
+        transform: none !important;
+    }
+
+    .service-card:active {
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15) !important;
+    }
+}
+
+/* Accessibility: Respect reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+
+    .service-card,
+    .section-subtitle,
+    .section-title,
+    .section-description {
+        animation: none !important;
+        transition: none !important;
     }
 }

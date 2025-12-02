@@ -21,10 +21,10 @@
     width: 100%;
     max-width: 100%;
     color: var(--text);
-    
+
 }
 
-.projects-header h2{
+.projects-header h2 {
     font-size: clamp(2rem, 4vw, 2rem);
     margin: 2rem;
     line-height: 1.2;
@@ -33,6 +33,7 @@
     -webkit-background-clip: text;
     background-clip: text;
 }
+
 .projects-header h2::after {
     content: '';
     display: block;
@@ -42,6 +43,7 @@
     margin: 10px auto 0;
     border-radius: 2px;
 }
+
 .projects-header p {
     font-size: 1rem;
     color: var(--text);
@@ -49,6 +51,7 @@
     margin-top: 1rem;
     line-height: 1.6;
 }
+
 .projects-filters {
     display: flex;
     justify-content: center;
@@ -200,20 +203,328 @@
     gap: 1rem;
 }
 
-@media (max-width:768px) {
+/* Responsive for tablets and medium screens */
+@media (max-width: 992px) {
+    .projects-section {
+        padding: 3rem 1.5rem;
+    }
+
+    .projects-header {
+        padding: 1rem 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .projects-header h2 {
+        font-size: clamp(1.75rem, 5vw, 2rem);
+        margin: 1.5rem;
+    }
+
+    .projects-row {
+        gap: 1.5rem;
+        padding: 1.5rem;
+    }
+
+    .project-card {
+        max-width: 450px;
+    }
+}
+
+/* Responsive for small tablets and landscape phones */
+@media (max-width: 880px) {
+    .projects-section {
+        padding: 2.5rem 1rem;
+    }
+
+    .projects-header {
+        padding: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .projects-header h2 {
+        font-size: clamp(1.5rem, 6vw, 1.8rem);
+        margin: 1rem;
+    }
+
+    .projects-header p {
+        font-size: 0.95rem;
+        margin-top: 0.75rem;
+    }
+
+    .projects-filters {
+        padding: 1rem;
+        gap: 0.75rem;
+        margin-bottom: 2rem;
+    }
+
+    .filter {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
+        border-radius: 25px;
+    }
+
+    .filter .filter-count {
+        font-size: 0.75rem;
+        padding: 0.15rem 0.5rem;
+    }
+
+    .projects-row {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.25rem;
+        padding: 1rem;
+    }
+
+    .project-card {
+        width: 100%;
+        max-width: 520px;
+    }
+}
+
+/* Responsive for portrait tablets and large phones */
+@media (max-width: 768px) {
+    .projects-section {
+        padding: 2rem 1rem;
+    }
+
     .projects-filters {
         flex-wrap: wrap;
         justify-content: center;
         gap: 0.5rem;
+        padding: 0.75rem;
+        margin-bottom: 1.5rem;
     }
 
     .filter {
         padding: 0.5rem 1rem;
-        font-size: 0.9rem;
+        font-size: 0.85rem;
     }
 
     .projects-row {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
+        gap: 1rem;
+        padding: 0.75rem;
+    }
+
+    .project-card {
+        max-width: 100%;
+        border-radius: 12px;
+    }
+
+    .project-body {
+        padding: 1.25rem;
+    }
+
+    .project-title {
+        font-size: 1.1rem;
+        margin-bottom: 0.4rem;
+    }
+
+    .project-desc {
+        font-size: 0.85rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .project-tech {
+        gap: 0.4rem;
+        margin-bottom: 1rem;
+    }
+
+    .tech-tag {
+        font-size: 0.75rem;
+        padding: 0.25rem 0.6rem;
+    }
+
+    .project-overlay {
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.6) 100%);
+    }
+}
+
+/* Responsive for small phones and compact devices */
+@media (max-width: 640px) {
+    .projects-section {
+        padding: 1.5rem 0.75rem;
+    }
+
+    .projects-header {
+        padding: 0.75rem;
+        margin-bottom: 1rem;
+    }
+
+    .projects-header h2 {
+        font-size: clamp(1.3rem, 7vw, 1.6rem);
+        margin: 0.75rem;
+    }
+
+    .projects-header h2::after {
+        width: 60px;
+        height: 3px;
+        margin: 8px auto 0;
+    }
+
+    .projects-header p {
+        font-size: 0.9rem;
+        margin-top: 0.5rem;
+    }
+
+    .projects-filters {
+        padding: 0.5rem;
+        gap: 0.4rem;
+        margin-bottom: 1rem;
+    }
+
+    .filter {
+        padding: 0.45rem 0.9rem;
+        font-size: 0.8rem;
+        border-radius: 20px;
+    }
+
+    .filter .filter-count {
+        font-size: 0.7rem;
+        padding: 0.1rem 0.4rem;
+    }
+
+    .projects-row {
+        gap: 0.75rem;
+        padding: 0.5rem;
+    }
+
+    .project-card {
+        max-width: 100%;
+        border-radius: 10px;
+    }
+
+    .project-media img {
+        height: 220px;
+        object-fit: cover;
+    }
+
+    .project-body {
+        padding: 1rem;
+    }
+
+    .project-title {
+        font-size: 1rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .project-desc {
+        font-size: 0.8rem;
+        margin-bottom: 0.6rem;
+        line-height: 1.5;
+    }
+
+    .project-tech {
+        gap: 0.3rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .tech-tag {
+        font-size: 0.7rem;
+        padding: 0.2rem 0.5rem;
+    }
+
+    .view-project {
+        font-size: 0.9rem;
+    }
+}
+
+/* Extra small phones and foldable devices */
+@media (max-width: 480px) {
+    .projects-section {
+        padding: 1rem 0.5rem;
+    }
+
+    .projects-header {
+        padding: 0.5rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .projects-header h2 {
+        font-size: clamp(1.1rem, 8vw, 1.4rem);
+        margin: 0.5rem;
+    }
+
+    .projects-header p {
+        font-size: 0.85rem;
+        margin-top: 0.4rem;
+    }
+
+    .projects-filters {
+        padding: 0.4rem;
+        gap: 0.3rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .filter {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.75rem;
+    }
+
+    .projects-row {
+        gap: 0.5rem;
+        padding: 0.25rem;
+    }
+
+    .project-card {
+        border-radius: 8px;
+    }
+
+    .project-media img {
+        height: 180px;
+    }
+
+    .project-body {
+        padding: 0.75rem;
+    }
+
+    .project-title {
+        font-size: 0.95rem;
+    }
+
+    .project-desc {
+        font-size: 0.75rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .tech-tag {
+        font-size: 0.65rem;
+        padding: 0.15rem 0.4rem;
+    }
+}
+
+/* Touch devices: disable hover animations */
+@media (hover: none) {
+    .project-card {
+        transform: translateY(0) !important;
+        transition: box-shadow 0.3s ease !important;
+    }
+
+    .project-card:active {
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15) !important;
+    }
+
+    .project-media img {
+        transition: none !important;
+    }
+
+    .project-overlay {
+        display: none;
+    }
+
+    .view-project {
+        opacity: 0;
+        height: 0;
+        overflow: hidden;
+    }
+}
+
+/* Accessibility: Respect reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+
+    .project-card,
+    .filter,
+    .project-media img,
+    .view-project {
+        animation: none !important;
+        transition: none !important;
     }
 }
