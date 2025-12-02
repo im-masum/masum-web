@@ -43,6 +43,11 @@
     opacity: 0;
     transform: translateY(20px);
     animation: fadeSlideUp 0.8s ease-out 0.2s forwards;
+    color: transparent;
+    background: linear-gradient(45deg, #5e04b8, #fb5907);
+    -webkit-background-clip: text;
+    background-clip: text;
+
 }
 
 .about-header h2::after {
@@ -51,153 +56,153 @@
     width: 100px;
     height: 4px;
     background: linear-gradient(45deg, #5e04b8, #fb5907);
-
     margin: 10px auto 0;
     border-radius: 2px;
+}
 
-    .about-subtitle {
-        color: var(--accent-gradient);
-        font-size: 1rem;
-        font-weight: 600;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        margin-bottom: 1rem;
-        display: block;
-        opacity: 0;
-        transform: translateY(20px);
-        animation: fadeSlideUp 0.8s ease-out forwards;
-    }
+.about-subtitle {
+    color: var(--accent-gradient);
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+    display: block;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeSlideUp 0.8s ease-out forwards;
+}
 
+.about-grid {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: min(2rem, 16%) 2rem;
+
+}
+
+.about-profile {
+    border-radius: 16px;
+    padding: min(2rem, 16%) 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+
+}
+
+.about-profile img {
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+    border-radius: 12px;
+    display: block;
+
+
+}
+
+.profile-meta h3 {
+    margin-top: 0.75rem;
+    margin-bottom: 0.25rem;
+}
+
+.profile-stats {
+    display: flex;
+    gap: 5rem;
+    margin-top: 1rem;
+    padding: 0;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-stats li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--text);
+}
+
+.profile-links {
+    width: 100%;
+    max-width: 1200px;
+    display: inline-flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.75rem;
+    padding: min(1rem, 8%) 1rem;
+}
+
+.about-content h4 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.skills .skill {
+    margin-bottom: 0.9rem;
+}
+
+.skill-head {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-bottom: 0.35rem;
+}
+
+.skill-bar {
+    background: rgba(255, 255, 255, 0.04);
+    height: 12px;
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.skill-bar-fill {
+    height: 100%;
+    width: 0%;
+    background: var(--accent-gradient);
+    border-radius: 999px;
+    transition: width 0.9s cubic-bezier(.2, .9, .2, 1);
+}
+
+.timeline {
+    margin-top: 1rem;
+    padding-left: 1rem;
+}
+
+.timeline li {
+    margin-bottom: 0.6rem;
+}
+
+.about-cta {
+    margin-top: 1.25rem;
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+
+@media (max-width:880px) {
     .about-grid {
-        width: 100%;
-        max-width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        gap: 2rem;
-        padding: min(2rem, 16%) 2rem;
-
+        flex-direction: column;
     }
 
     .about-profile {
-        border-radius: 16px;
-        padding: min(2rem, 16%) 2rem;
-        display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
-        text-align: center;
-        border: 1px solid rgba(255, 255, 255, 0.04);
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-
+        text-align: left;
     }
 
     .about-profile img {
-        width: 100%;
-        max-width: 400px;
-        height: 100%;
-        border-radius: 12px;
-        display: block;
-
-
+        width: 120px;
+        height: 120px;
+        flex: 0 0 120px;
     }
-
-    .profile-meta h3 {
-        margin-top: 0.75rem;
-        margin-bottom: 0.25rem;
-    }
-
-    .profile-stats {
-        display: flex;
-        gap: 5rem;
-        margin-top: 1rem;
-        padding: 0;
-        list-style: none;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .profile-stats li {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        color: var(--text);
-    }
-
-    .profile-links {
-        width: 100%;
-        max-width: 1200px;
-        display: inline-flex;
-        gap: 1.5rem;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        margin-top: 0.75rem;
-        padding: min(1rem, 8%) 1rem;
-    }
-
-    .about-content h4 {
-        margin-top: 1rem;
-        margin-bottom: 0.5rem;
-    }
-
-    .skills .skill {
-        margin-bottom: 0.9rem;
-    }
-
-    .skill-head {
-        display: flex;
-        justify-content: space-between;
-        font-weight: 600;
-        font-size: 0.95rem;
-        margin-bottom: 0.35rem;
-    }
-
-    .skill-bar {
-        background: rgba(255, 255, 255, 0.04);
-        height: 12px;
-        border-radius: 999px;
-        overflow: hidden;
-    }
-
-    .skill-bar-fill {
-        height: 100%;
-        width: 0%;
-        background: var(--accent-gradient);
-        border-radius: 999px;
-        transition: width 0.9s cubic-bezier(.2, .9, .2, 1);
-    }
-
-    .timeline {
-        margin-top: 1rem;
-        padding-left: 1rem;
-    }
-
-    .timeline li {
-        margin-bottom: 0.6rem;
-    }
-
-    .about-cta {
-        margin-top: 1.25rem;
-        display: flex;
-        gap: 0.75rem;
-        flex-wrap: wrap;
-    }
-
-    @media (max-width:880px) {
-        .about-grid {
-            flex-direction: column;
-        }
-
-        .about-profile {
-            flex-direction: row;
-            align-items: center;
-            text-align: left;
-        }
-
-        .about-profile img {
-            width: 120px;
-            height: 120px;
-            flex: 0 0 120px;
-        }
-    }
+}
