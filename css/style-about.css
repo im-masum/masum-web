@@ -30,7 +30,8 @@
     padding: min(2rem, 16%) 2rem;
     width: 100%;
     max-width: 100%;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 0 auto;
     border-radius: 16px;
 
 
