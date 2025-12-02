@@ -12,10 +12,10 @@
     --bg-primary: #ffffff;
     --bg: #f5f2f2;
     --text: #111;
-    --muted: rgba(225, 223, 223, 0.65);
-    --accent: #ff4b2b;
+    --muted: rgba(112, 14, 5, 0.591);
+    --accent: #611508;
     --accent-rgb: #dbd1d1;
-    --accent-gradient: linear-gradient(45deg, #ff4b2b, #ff416c);
+    --accent-gradient: linear-gradient(45deg, #5e04b8, #229bff);
     --nav-bg: rgba(255, 255, 255, 0.3);
     --nav-links: #ffffff;
     --shadow: rgba(0, 0, 0, 0.1);

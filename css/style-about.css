@@ -34,7 +34,19 @@
     margin: 0 auto;
     border-radius: 16px;
 
+}
 
+.about-subtitle {
+    color: var(--accent-gradient);
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+    display: block;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeSlideUp 0.8s ease-out forwards;
 }
 
 .about-grid {
