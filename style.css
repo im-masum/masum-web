@@ -201,3 +201,253 @@ section {
         transform: translate(-15px, -5px);
     }
 }
+
+/* Responsive: Large screens (1200px and up) */
+@media (max-width: 1200px) {
+    section {
+        padding: 2.5rem 1.5rem;
+        margin: 18px 8px;
+    }
+
+    .btn {
+        padding: 0.6rem 1.8rem;
+        font-size: 0.95rem;
+    }
+
+    .btn.small {
+        padding: 0.7rem 1rem;
+        font-size: 0.85rem;
+    }
+}
+
+/* Responsive: Medium screens and tablets (992px - 1199px) */
+@media (max-width: 992px) {
+    section {
+        padding: 2rem 1.25rem;
+        margin: 16px 6px;
+        border-radius: 16px;
+    }
+
+    .btn {
+        padding: 0.55rem 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    .btn.small {
+        padding: 0.6rem 0.9rem;
+        font-size: 0.8rem;
+    }
+}
+
+/* Responsive: Small tablets and landscape phones (880px - 991px) */
+@media (max-width: 880px) {
+    section {
+        padding: 1.75rem 1rem;
+        margin: 14px 4px;
+        border-radius: 14px;
+    }
+
+    .btn {
+        padding: 0.5rem 1.2rem;
+        font-size: 0.85rem;
+    }
+
+    .btn:hover {
+        transform: translateY(-2px) scale(1.03);
+    }
+
+    .btn.small {
+        padding: 0.5rem 0.8rem;
+        font-size: 0.75rem;
+    }
+}
+
+/* Responsive: Portrait tablets and large phones (768px - 879px) */
+@media (max-width: 768px) {
+    * {
+        font-size: 15px;
+    }
+
+    section {
+        padding: 1.5rem 0.75rem;
+        margin: 12px 0;
+        border-radius: 12px;
+        box-shadow: 2px 2px 15px rgba(80, 80, 80, 0.08);
+    }
+
+    .container {
+        padding: 1.25rem;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+    }
+
+    .btn:hover {
+        transform: translateY(-2px) scale(1.02);
+    }
+
+    .btn.small {
+        padding: 0.45rem 0.7rem;
+        font-size: 0.7rem;
+    }
+
+    #backToTop {
+        padding: 6px 8px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Responsive: Small phones (640px - 767px) */
+@media (max-width: 640px) {
+    * {
+        font-size: 14px;
+    }
+
+    section {
+        padding: 1.25rem 0.5rem;
+        margin: 10px 0;
+        border-radius: 10px;
+        box-shadow: 1px 1px 10px rgba(80, 80, 80, 0.06);
+    }
+
+    .container {
+        padding: 1rem;
+        margin: 0 auto;
+    }
+
+    .btn {
+        padding: 0.45rem 0.9rem;
+        font-size: 0.75rem;
+        width: 100%;
+    }
+
+    .btn:hover {
+        transform: translateY(-1px) scale(1.01);
+    }
+
+    .btn.small {
+        padding: 0.4rem 0.6rem;
+        font-size: 0.65rem;
+    }
+
+    #backToTop {
+        padding: 5px 7px;
+        font-size: 0.8rem;
+    }
+
+    .visually-hidden {
+        display: none;
+    }
+}
+
+/* Responsive: Extra small phones and foldables (480px - 639px) */
+@media (max-width: 480px) {
+    * {
+        font-size: 13px;
+    }
+
+    section {
+        padding: 1rem 0.4rem;
+        margin: 8px 0;
+        border-radius: 8px;
+        box-shadow: 0 1px 8px rgba(80, 80, 80, 0.04);
+    }
+
+    .container {
+        padding: 0.75rem;
+        margin: 0 auto;
+    }
+
+    .btn {
+        padding: 0.4rem 0.75rem;
+        font-size: 0.7rem;
+        width: 100%;
+        min-height: 44px;
+    }
+
+    .btn:hover {
+        transform: translateY(-1px);
+    }
+
+    .btn.small {
+        padding: 0.35rem 0.5rem;
+        font-size: 0.6rem;
+    }
+
+    #backToTop {
+        padding: 4px 6px;
+        font-size: 0.75rem;
+        bottom: 20px;
+        right: 10px;
+    }
+
+    .fade-up,
+    .fade-slide {
+        transform: translateY(20px);
+    }
+}
+
+/* Touch devices: Simplify hover effects */
+@media (hover: none) {
+    .btn:hover {
+        transform: none;
+        box-shadow: none;
+    }
+
+    #backToTop:hover {
+        opacity: 0.8;
+    }
+
+    @keyframes fadeSlideUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes fadeSlideLeft {
+        from {
+            opacity: 0;
+            transform: translateX(20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+}
+
+/* Accessibility: Respect reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+
+    body {
+        transition: none !important;
+    }
+
+    .btn,
+    #backToTop,
+    .fade-up,
+    .fade-slide {
+        animation: none !important;
+        transition: none !important;
+    }
+}
