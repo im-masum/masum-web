@@ -8,6 +8,7 @@
     justify-content: center;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     border-radius: 16px;
+    flex-wrap: wrap;
 }
 
 .about-container {
@@ -19,6 +20,7 @@
     max-width: 100%;
     background: var(--bg);
     padding: min(2rem, 16%) 2rem;
+    flex-wrap: wrap;
 
 }
 
@@ -190,19 +192,24 @@
 }
 
 @media (max-width:880px) {
+    .about-container{
+        padding: min(1rem, 8%) 1rem;
+    }
+    
     .about-grid {
         flex-direction: column;
     }
 
     .about-profile {
-        flex-direction: row;
         align-items: center;
         text-align: left;
     }
 
     .about-profile img {
-        width: 120px;
-        height: 120px;
+        width: 60%;
+        height: 100%;
         flex: 0 0 120px;
     }
+   
+
 }
