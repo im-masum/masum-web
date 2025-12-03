@@ -218,7 +218,7 @@
 
 .hero-right {
     max-width: 100%;
-    width: 40%;
+    width: 50%;
     position: relative;
     animation: fadeSlideLeft 1s ease-out 0.4s backwards;
     perspective: 2000px;
