@@ -69,6 +69,30 @@
     animation: fadeDown 0.3s ease forwards;
 }
 
+/* FAQ Dropdown */
+.faq-dropdown {
+    position: absolute;
+    left: -50px;
+    top: 30px;
+    background: var(--nav-bg);
+    display: none;
+    flex-direction: column;
+    gap: 8px;
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    padding: min(1rem,168%) 2rem;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 12px var(--shadow);
+    z-index: 1001;
+}
+
+.faq-nav:hover .faq-dropdown {
+    display: flex;
+    animation: fadeDown 0.3s ease forwards;
+}
+
+
 @keyframes fadeDown {
     from {
         opacity: 0;

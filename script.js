@@ -1,3 +1,30 @@
+// Hide all FAQ details by default on page load
+document.addEventListener("DOMContentLoaded", function () {
+  document
+    .querySelectorAll(".faq-list details")
+    .forEach((d) => (d.open = false));
+});
+// FAQ Dropdown: Open details on option click
+document.addEventListener("DOMContentLoaded", function () {
+  const faqLinks = document.querySelectorAll(".faq-dropdown a");
+  faqLinks.forEach((link) => {
+    link.addEventListener("click", function (e) {
+      const targetId = this.getAttribute("href").replace("#", "");
+      const section = document.getElementById(targetId);
+      if (section) {
+        e.preventDefault();
+        section.scrollIntoView({ behavior: "smooth", block: "start" });
+        // Hide all details in this section
+        const detailsList = section.querySelectorAll("details");
+        detailsList.forEach((d) => (d.open = false));
+        // Open the first details in the section
+        if (detailsList.length > 0) {
+          detailsList[0].open = true;
+        }
+      }
+    });
+  });
+});
 // Dark Mode Toggle (defensive)
 const themeToggle = document.getElementById("themeToggle");
 if (themeToggle) {

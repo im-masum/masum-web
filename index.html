@@ -9,7 +9,7 @@
     <meta name="theme-color" content="#ffffff" />
     <title>MasumWeb</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap"
-    rel="stylesheet">
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="css/style-navbar.css">
@@ -41,6 +41,18 @@
             <li><a href="#projects">Projects</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li class="faq-nav">
+                <a href="#faq">FAQ</a>
+                <ul class="dropdown faq-dropdown">
+                    <li><a href="#faq-general">General</a></li>
+                    <li><a href="#faq-services">Services</a></li>
+                    <li><a href="#faq-contact">Contact</a></li>
+                    <li><a href="#faq-payment">Payment</a></li>
+                    <li><a href="#faq-support">Support</a></li>
+                    <li><a href="#faq-privacy">Privacy</a></li>
+                    <li><a href="#faq-terms">Terms</a></li>
+                </ul>
+            </li>
         </ul>
 
         <div class="nav-icons">
@@ -97,8 +109,7 @@
                     <div class="hero-card" id="heroCard" tabindex="0" aria-hidden="false" role="img"
                         aria-label="Featured project preview">
                         <div class="card-content">
-                            <img src="images/image.jpg"
-                                alt="Featured project preview">
+                            <img src="images/image.jpg" alt="Featured project preview">
                             <div class="card-overlay">
                                 <div class="card-badge">Featured Work</div>
                                 <div class="card-info">
@@ -366,7 +377,7 @@
                                 <a class="btn outline small" href="#" target="_blank" rel="noopener">
                                     <i class="fab fa-github"></i> Code
                                 </a>
-                            </div> 
+                            </div>
                         </div>
                     </article>
                 </div>
@@ -382,13 +393,15 @@
             <div class="container about-container">
                 <header class="about-header reveal" data-delay="0.05">
                     <h2 id="about-heading">About </h2>
-                    <p class="about-subtitle">Crafting accessible, performant front-end experiences — from design systems to
+                    <p class="about-subtitle">Crafting accessible, performant front-end experiences — from design
+                        systems to
                         production-ready components.</p>
                 </header>
 
                 <div class="about-grid">
                     <aside class="about-profile reveal" data-delay="0.12" aria-labelledby="profile-heading">
-                        <img src="images/pro-img.jpg" alt="Masum — Founder & Frontend Engineer" width="320" height="320" />
+                        <img src="images/pro-img.jpg" alt="Masum — Founder & Frontend Engineer" width="320"
+                            height="320" />
                         <div class="profile-meta">
                             <h3 id="profile-heading">Mohammed Masum Iqbal Chowdhury</h3>
                             <p class="muted">Founder • Frontend Engineer • Motion Designer</p>
@@ -579,5 +592,108 @@
     </footer>
 
     <script src="script.js"></script>
+    <!-- FAQ Section -->
+    <section id="faq" class="section faq" aria-labelledby="faq-heading">
+        <div class="container faq-inner">
+            <h2 id="faq-heading" class="faq-title">Frequently Asked Questions</h2>
+            <div class="faq-list">
+                <!-- General FAQ -->
+                <section id="faq-general">
+                    <h3>General</h3>
+                    <details>
+                        <summary>What is MasumWeb?</summary>
+                        <p>MasumWeb is a front-end web development service focused on accessibility, performance, and
+                            modern design.</p>
+                    </details>
+                    <details>
+                        <summary>Do you work internationally?</summary>
+                        <p>Yes, we collaborate with clients worldwide.</p>
+                    </details>
+                </section>
+
+                <!-- Services FAQ -->
+                <section id="faq-services">
+                    <h3>Services</h3>
+                    <details>
+                        <summary>What services do you offer?</summary>
+                        <p>We provide web design, UI animation, and frontend development for modern, accessible
+                            experiences.</p>
+                    </details>
+                    <details>
+                        <summary>Can you build custom components?</summary>
+                        <p>Yes, we specialize in production-ready, custom UI components.</p>
+                    </details>
+                </section>
+
+                <!-- Contact FAQ -->
+                <section id="faq-contact">
+                    <h3>Contact</h3>
+                    <details>
+                        <summary>How can I contact you?</summary>
+                        <p>Use our contact form or social media links in the footer.</p>
+                    </details>
+                    <details>
+                        <summary>What is your response time?</summary>
+                        <p>We aim to respond within 24 hours on business days.</p>
+                    </details>
+                </section>
+
+                <!-- Payment FAQ -->
+                <section id="faq-payment">
+                    <h3>Payment</h3>
+                    <details>
+                        <summary>What payment methods do you accept?</summary>
+                        <p>We accept major credit cards, PayPal, and bank transfers.</p>
+                    </details>
+                    <details>
+                        <summary>Is payment secure?</summary>
+                        <p>All payments are processed securely using industry-standard encryption.</p>
+                    </details>
+                </section>
+
+                <!-- Support FAQ -->
+                <section id="faq-support">
+                    <h3>Support</h3>
+                    <details>
+                        <summary>Do you offer post-launch support?</summary>
+                        <p>Yes, we provide ongoing support and maintenance packages.</p>
+                    </details>
+                    <details>
+                        <summary>How do I request support?</summary>
+                        <p>Contact us via email or the support form for assistance.</p>
+                    </details>
+                </section>
+
+                <!-- Privacy FAQ -->
+                <section id="faq-privacy">
+                    <h3>Privacy</h3>
+                    <details>
+                        <summary>How is my data protected?</summary>
+                        <p>We follow strict privacy policies and use secure technologies to protect your data.</p>
+                    </details>
+                    <details>
+                        <summary>Do you share my information?</summary>
+                        <p>No, your information is never shared with third parties without consent.</p>
+                    </details>
+                </section>
+
+                <!-- Terms FAQ -->
+                <section id="faq-terms">
+                    <h3>Terms</h3>
+                    <details>
+                        <summary>Where can I read your terms?</summary>
+                        <p>Our terms and conditions are available on request and will be published on our website soon.
+                        </p>
+                    </details>
+                    <details>
+                        <summary>Do you offer refunds?</summary>
+                        <p>Refunds are considered on a case-by-case basis as per our terms and conditions.</p>
+                    </details>
+                </section>
+            </div>
+        </div>
+    </section>
+
 </body>
+
 </html>
