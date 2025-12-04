@@ -25,6 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
 // Dark Mode Toggle (defensive)
 const themeToggle = document.getElementById("themeToggle");
 if (themeToggle) {
