@@ -75,6 +75,10 @@
 }
 
 /* FAQ Dropdown */
+.faq {
+    position: relative;
+    display: none;
+}
 .faq-dropdown {
     position: absolute;
     left: -50px;
