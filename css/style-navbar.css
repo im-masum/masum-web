@@ -279,7 +279,8 @@
         font-size: 1rem;
     }
     .nav-links a:hover, .nav-links a.active {
-        color: aquamarine;
+        color: var(--accent);
+        text-shadow: 0 0 10px var(--accent);
     }
 
     .dropdown {
