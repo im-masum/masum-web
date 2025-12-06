@@ -47,7 +47,7 @@
 }
 
 .nav-links a:hover, .nav-links a.active {
-    color: var(--accent);
+    color: var(--text);
     text-shadow: 0 0 10px var(--accent);
 }
 
@@ -131,7 +131,7 @@
     border: none;
     cursor: pointer;
     transition: 0.3s;
-    
+
 }
 
 .hamburger:hover {
