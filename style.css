@@ -77,7 +77,8 @@ section {
     transition: 0.3s;
     display: inline-flex;
     align-items: center;
-    gap: 0.5rem;
+    justify-content: center;
+    gap: 1rem;
     text-align: center;
 
 }
@@ -89,6 +90,9 @@ section {
 
 /* small button variation */
 .btn.small {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: var(--accent);
     padding: min(1rem, 8%) 1rem;
     font-size: 0.9rem;
@@ -109,7 +113,10 @@ section {
 
 /* Back-to-top button */
 #backToTop {
-    display: inline-block;
+    /* display: inline-block; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     opacity: 0;
     transform: translateY(8px);
     transition: opacity 0.25s ease, transform 0.25s ease;
@@ -236,12 +243,12 @@ section {
 
     .btn {
         padding: 0.6rem 1.8rem;
-        font-size: 0.95rem;
+        font-size: 1rem;
     }
 
     .btn.small {
         padding: 0.7rem 1rem;
-        font-size: 0.85rem;
+        font-size: 1rem;
     }
 }
 
