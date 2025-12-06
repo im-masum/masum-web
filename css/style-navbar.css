@@ -15,9 +15,6 @@
     transition: 0.4s;
 }
 
-/* .navbar.glass {
-    background: var(--nav-bg);
-} */
 
 .logo {
     font-size: 1.8em;
@@ -48,7 +45,7 @@
 
 .nav-links a:hover, .nav-links a.active {
     color: var(--text);
-    text-shadow: 0 0 10px var(--accent);
+    text-shadow: 0 0 10px var(--accent)
 }
 
 /* Dropdown */
@@ -166,7 +163,7 @@
     }
 
     .nav-links a {
-        font-size: 0.95rem;
+        font-size: 1rem;
     }
 
     .icon {
@@ -189,7 +186,7 @@
     }
 
     .nav-links a {
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
 
     .dropdown {
@@ -217,7 +214,7 @@
     }
 
     .nav-links a {
-        font-size: 0.85rem;
+        font-size: 1rem;
     }
 
     .dropdown {
@@ -279,7 +276,10 @@
         display: block;
         width: 100%;
         padding: 0.5rem 0.75rem;
-        font-size: 0.9rem;
+        font-size: 1rem;
+    }
+    .nav-links a:hover, .nav-links a.active {
+        color: aquamarine;
     }
 
     .dropdown {
