@@ -10,7 +10,6 @@
     background: var(--bg);
     margin: 0 auto;
 }
-
 .services-header {
     display: flex;
     flex-direction: column;
@@ -211,7 +210,7 @@
     opacity: 0;
     transform: translateY(30px);
     animation: fadeSlideUp 0.8s ease-out 1.2s forwards;
-    background-color: #5e04b8;
+
 }
 
 /* Responsive for medium screens and tablets */
