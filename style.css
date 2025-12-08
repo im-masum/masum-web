@@ -104,12 +104,16 @@ section {
     box-shadow: 0 0 15px var(--accent);
 }
 
-.btn.outline {
+.btn .outline  .small{
     background: transparent;
     border: 2px solid var(--accent);
     color: var(--accent);
+    background-color: #0072ff;
 }
-
+.btn .outline  .small:hover{
+    background: var(--accent);
+    color: var(--text);
+}
 
 /* Back-to-top button */
 #backToTop {
@@ -459,7 +463,7 @@ section {
     }
 }
 
-/* Accessibility: Respect reduced motion preference */
+/* Accessibility: Respect reduced motion preference
 @media (prefers-reduced-motion: reduce) {
 
     *,
@@ -482,4 +486,4 @@ section {
         animation: none !important;
         transition: none !important;
     }
-}
+} */
