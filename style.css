@@ -138,6 +138,7 @@ section {
     border: 1px solid rgba(0, 0, 0, 0.06);
     padding: 8px 10px;
     border-radius: 8px;
+    background-color: #0072ff;
 }
 
 #backToTop.visible {
@@ -264,6 +265,7 @@ section {
         padding: 0.7rem 1rem;
         font-size: 1rem;
     }
+    
 }
 
 /* Responsive: Medium screens and tablets (992px - 1199px) */
