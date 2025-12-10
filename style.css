@@ -135,11 +135,11 @@ section {
     z-index: 1200;
     border: 1px solid rgba(0, 0, 0, 0.06);
     padding: 8px 10px;
-    border-radius: 8px;
+    border-radius: 50%;
     width: 60px;
-    height: 50px;
+    height: 60px;
     position: fixed;
-    bottom: 30px;
+    bottom: 50px;
     right: 30px;
 }
 
