@@ -118,7 +118,6 @@ section {
     background: transparent;
     border: 2px solid var(--accent);
     color: var(--accent);
-    background-color: #0072ff;
 }
 .btn .outline  .small:hover{
     background: var(--accent);
@@ -127,7 +126,6 @@ section {
 
 /* Back-to-top button */
 #backToTop {
-    /* display: inline-block; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -138,7 +136,11 @@ section {
     border: 1px solid rgba(0, 0, 0, 0.06);
     padding: 8px 10px;
     border-radius: 8px;
-    background-color: #0072ff;
+    width: 60px;
+    height: 50px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
 }
 
 #backToTop.visible {
