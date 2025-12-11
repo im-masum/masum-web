@@ -134,10 +134,8 @@ section {
     transition: opacity 0.25s ease, transform 0.25s ease;
     z-index: 1200;
     border: 1px solid rgba(0, 0, 0, 0.06);
-    padding: 8px 10px;
+    padding: 10px 10px;
     border-radius: 50%;
-    width: 60px;
-    height: 60px;
     position: fixed;
     bottom: 50px;
     right: 30px;
