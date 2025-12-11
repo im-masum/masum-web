@@ -89,8 +89,8 @@ section {
     align-items: center;
     justify-content: center;
     gap: 1rem;
+    font-size: 1rem;
     text-align: center;
-
 }
 
 .btn:hover {
@@ -259,7 +259,7 @@ section {
     }
 
     .btn {
-        padding: 0.6rem 1.8rem;
+        padding: min(0.6rem, 10%) 1.8rem;
         font-size: 1rem;
     }
 

@@ -1,4 +1,4 @@
-/* 
+/* Skip link styles */ 
 .skip-link {
     position: absolute;
     left: -9999px;
@@ -27,7 +27,7 @@
 }
 
 /* focus-visible outlines (keyboard users) */
-/* *:focus:not(:focus-visible) {
+ *:focus:not(:focus-visible) {
     outline: none;
 }
 
@@ -35,10 +35,10 @@
     outline: 3px solid var(--accent);
     outline-offset: 3px;
     border-radius: 4px;
-} */
+} 
 
-/* Honeypot (visually-hidden / off-canvas) */
-/* .honeypot {
+ /* Honeypot (visually-hidden / off-canvas)  */
+ .honeypot {
     position: absolute !important;
     left: -9999px !important;
     width: 1px !important;
@@ -46,4 +46,4 @@
     overflow: hidden !important;
     pointer-events: none !important;
     opacity: 0 !important;
-} */ */
+} 
