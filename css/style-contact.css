@@ -9,6 +9,7 @@
     width: 100%;
     max-width: 100%;
     text-align: center;
+    margin: 0 auto;
 }
 
 .contact-grid {
@@ -86,9 +87,15 @@
 
 .contact-actions {
     display: flex;
-    gap: 0.6rem;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
     flex-wrap: wrap;
+    padding: min(0.5rem, 4%) 1rem;
+    text-align: center;
+    margin: 0 auto;
 }
+
 
 .contact-form {
     flex: 1 1 520px;

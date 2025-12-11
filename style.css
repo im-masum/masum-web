@@ -80,7 +80,7 @@ section {
 .btn {
     background: var(--accent);
     color: var(--text);
-    padding: min(.5rem, 8%) 2rem;
+    padding: min(.5rem, 8%) 1.5rem;
     border: none;
     border-radius: 25px;
     cursor: pointer;
@@ -91,6 +91,7 @@ section {
     gap: 1rem;
     font-size: 1rem;
     text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .btn:hover {
@@ -258,7 +259,7 @@ section {
         margin: 18px 8px;
     }
 
-    .btn {
+    /* .btn {
         padding: min(0.6rem, 10%) 1.8rem;
         font-size: 1rem;
     }
@@ -266,7 +267,7 @@ section {
     .btn.small {
         padding: 0.7rem 1rem;
         font-size: 1rem;
-    }
+    } */
     
 }
 
@@ -278,7 +279,7 @@ section {
         border-radius: 16px;
     }
 
-    .btn {
+    /* .btn {
         padding: 0.55rem 1.5rem;
         font-size: 0.9rem;
     }
@@ -286,7 +287,7 @@ section {
     .btn.small {
         padding: 0.6rem 0.9rem;
         font-size: 0.8rem;
-    }
+    } */
 }
 
 /* Responsive: Small tablets and landscape phones (880px - 991px) */
@@ -297,7 +298,7 @@ section {
         border-radius: 14px;
     }
 
-    .btn {
+    /* .btn {
         padding: 0.5rem 1.2rem;
         font-size: 0.85rem;
     }
@@ -309,7 +310,7 @@ section {
     .btn.small {
         padding: 0.5rem 0.8rem;
         font-size: 0.75rem;
-    }
+    } */
 }
 
 /* Responsive: Portrait tablets and large phones (768px - 879px) */
@@ -331,7 +332,7 @@ section {
         margin: 0 auto;
     }
 
-    .btn {
+    /* .btn {
         padding: 0.5rem 1rem;
         font-size: 0.8rem;
     }
@@ -343,7 +344,7 @@ section {
     .btn.small {
         padding: 0.45rem 0.7rem;
         font-size: 0.7rem;
-    }
+    } */
 
     #backToTop {
         padding: 6px 8px;
@@ -415,8 +416,6 @@ section {
     .btn {
         padding: 0.4rem 0.75rem;
         font-size: 0.7rem;
-        width: 100%;
-        min-height: 44px;
     }
 
     .btn:hover {
@@ -477,7 +476,7 @@ section {
     }
 }
 
-/* Accessibility: Respect reduced motion preference
+ /* Accessibility: Respect reduced motion preference */
 @media (prefers-reduced-motion: reduce) {
 
     *,
@@ -500,4 +499,4 @@ section {
         animation: none !important;
         transition: none !important;
     }
-} */
+} 
