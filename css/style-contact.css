@@ -127,13 +127,13 @@
 
 .contact-form {
     flex: 1 1 520px;
-    min-width: 260px;
+    min-width: 500px;
     background: var(--bg);
     color: var(--text);
-    box-shadow: 0 10px 30px rgba(2, 6, 23, 0.06);
-    border-radius: 12px;
     padding: min(1.5rem, 12%) 1.5rem;
+    box-shadow: 0 10px 30px rgba(2, 6, 23, 0.06);
     border: 1px solid rgba(255, 255, 255, 0.03);
+    border-radius: 12px;
 }
 
 /* floating label fields */
