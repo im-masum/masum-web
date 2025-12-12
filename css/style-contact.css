@@ -279,10 +279,6 @@
         padding: 0.75rem 1rem;
     }
 
-    .btn {
-        padding: 0.75rem 1.5rem;
-        font-size: 0.95rem;
-    }
 
     .contact-feedback {
         min-width: 150px;
@@ -364,11 +360,6 @@
     .form-field textarea {
         font-size: 0.9rem;
         padding: 0.65rem 0.9rem;
-    }
-
-    .btn {
-        padding: 0.65rem 1.2rem;
-        font-size: 0.9rem;
     }
 
     .btn-spinner {
@@ -475,12 +466,6 @@
 
     .form-field textarea {
         min-height: 100px;
-    }
-
-    .btn {
-        padding: 0.6rem 1rem;
-        font-size: 0.85rem;
-        width: 100%;
     }
 
     .btn-spinner {
@@ -593,10 +578,6 @@
         min-height: 80px;
     }
 
-    .btn {
-        padding: 0.5rem 0.8rem;
-        font-size: 0.8rem;
-    }
 
     .btn-spinner {
         width: 10px;
