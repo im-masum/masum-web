@@ -68,7 +68,6 @@ section {
 }
 .container {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -332,7 +331,7 @@ section {
         margin: 0 auto;
     }
 
-    /* .btn {
+     .btn {
         padding: 0.5rem 1rem;
         font-size: 0.8rem;
     }
@@ -344,7 +343,7 @@ section {
     .btn.small {
         padding: 0.45rem 0.7rem;
         font-size: 0.7rem;
-    } */
+    } 
 
     #backToTop {
         padding: 6px 8px;
