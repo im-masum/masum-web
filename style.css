@@ -297,7 +297,7 @@ section {
     }
 
     .container {
-        padding: 1.25rem;
+        padding: min(1.25rem, 14%) 1rem;
         max-width: 100%;
         margin: 0 auto;
     }
