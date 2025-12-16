@@ -74,7 +74,7 @@ section {
     width: 100%;
     max-width: 100%;
     margin: 0 auto;
-    padding: min(1.5rem, 16%) 1.5rem;
+    padding: min(2rem, 16%) 2rem;
 }
 
 .btn {
