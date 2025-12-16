@@ -268,39 +268,19 @@ section {
         margin: 16px 6px;
         border-radius: 16px;
     }
-
-    /* .btn {
-        padding: 0.55rem 1.5rem;
-        font-size: 0.9rem;
+    .container {
+        padding: 1.5rem 1.5rem;
     }
-
-    .btn.small {
-        padding: 0.6rem 0.9rem;
-        font-size: 0.8rem;
-    } */
 }
 
 /* Responsive: Small tablets and landscape phones (880px - 991px) */
 @media (max-width: 880px) {
     section {
         padding: 1.75rem 1rem;
-        margin: 14px 4px;
+        margin: 10px 5px;
         border-radius: 14px;
     }
 
-    /* .btn {
-        padding: 0.5rem 1.2rem;
-        font-size: 0.85rem;
-    }
-
-    .btn:hover {
-        transform: translateY(-2px) scale(1.03);
-    }
-
-    .btn.small {
-        padding: 0.5rem 0.8rem;
-        font-size: 0.75rem;
-    } */
 }
 
 /* Responsive: Portrait tablets and large phones (768px - 879px) */
