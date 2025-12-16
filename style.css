@@ -256,18 +256,8 @@ section {
 @media (max-width: 1200px) {
     section {
         padding: 2.5rem 1.5rem;
-        margin: 18px 8px;
+        margin: 10px 8px;
     }
-
-    /* .btn {
-        padding: min(0.6rem, 10%) 1.8rem;
-        font-size: 1rem;
-    }
-
-    .btn.small {
-        padding: 0.7rem 1rem;
-        font-size: 1rem;
-    } */
     
 }
 
