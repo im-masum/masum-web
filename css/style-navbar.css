@@ -278,6 +278,7 @@
         padding: 0.5rem 0.75rem;
         font-size: 1rem;
     }
+
     .nav-links a:hover, .nav-links a.active {
         color: var(--accent);
         text-shadow: 0 0 10px var(--accent);
@@ -297,6 +298,17 @@
     .nav-links li.open>.dropdown {
         display: flex;
         flex-direction: column;
+    }
+
+    /* Ensure FAQ submenu expands in mobile menu when parent is opened */
+    .nav-links li.open>.faq-dropdown {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-left: 0.5rem;
+        margin-top: 0.25rem;
+        background: transparent;
+        box-shadow: none;
     }
 
     .nav-icons {

@@ -48,7 +48,7 @@ body {
     color: var(--text);
     transition: all 0.5s ease;
     margin: auto;
-    
+
 }
 
 section {
@@ -66,6 +66,7 @@ section {
     gap: 10px;
 
 }
+
 .container {
     display: flex;
     align-items: center;
@@ -115,12 +116,13 @@ section {
     box-shadow: 0 0 15px var(--accent);
 }
 
-.btn .outline  .small{
+.btn .outline .small {
     background: transparent;
     border: 2px solid var(--accent);
     color: var(--accent);
 }
-.btn .outline  .small:hover{
+
+.btn .outline .small:hover {
     background: var(--accent);
     color: var(--text);
 }
@@ -258,6 +260,7 @@ section {
         padding: min(2rem, 18%) 2rem;
         margin: 10px 8px;
     }
+
     .container {
         padding: min(2rem, 18%) 2rem;
         margin: 10px 8px;
@@ -271,6 +274,7 @@ section {
         margin: 16px 6px;
         border-radius: 16px;
     }
+
     .container {
         padding: 1.5rem 1.5rem;
     }
@@ -304,6 +308,7 @@ section {
         max-width: 100%;
         margin: 0 auto;
     }
+
     .btn {
         padding: 0.5rem 1.2rem;
         font-size: 0.95rem;
@@ -398,6 +403,68 @@ section {
         right: 10px;
     }
 
+    /* FAQ details and summary styling */
+    .faq-list {
+        width: 100%;
+        padding: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .faq-list details {
+        background: rgba(0, 0, 0, 0.02);
+        border-radius: 8px;
+        padding: 0.5rem 0.75rem;
+        transition: background 0.18s ease;
+    }
+
+    .faq-list summary {
+        cursor: pointer;
+        font-weight: 600;
+        list-style: none;
+        outline: none;
+        display: block;
+        padding: 0.4rem 0.2rem;
+    }
+
+    .faq-list details[open] {
+        background: rgba(0, 0, 0, 0.04);
+    }
+
+
+    /* Global FAQ/Details improvements for all sizes */
+    .faq-list summary::-webkit-details-marker {
+        display: none;
+    }
+
+    .faq-list summary::after {
+        content: '\25be';
+        float: right;
+        transition: transform 0.18s ease;
+    }
+
+    .faq-list details[open]>summary::after {
+        transform: rotate(-180deg);
+    }
+
+    /* Keep containers constrained on large screens */
+    .container {
+        max-width: 1200px;
+    }
+
+    /* Make images and cards more fluid by default */
+    img, .hero-card, .project-card, .service-card {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Accessibility: increase touch target minimums */
+    button, .btn, .nav-links a {
+        min-height: 40px;
+        min-width: 44px;
+    }
+
     .fade-up,
     .fade-slide {
         transform: translateY(20px);
@@ -440,7 +507,7 @@ section {
     }
 }
 
- /* Accessibility: Respect reduced motion preference */
+/* Accessibility: Respect reduced motion preference */
 @media (prefers-reduced-motion: reduce) {
 
     *,
@@ -463,4 +530,4 @@ section {
         animation: none !important;
         transition: none !important;
     }
-} 
+}
