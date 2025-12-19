@@ -257,11 +257,15 @@ section {
 /* Responsive: Large screens (1200px and up) */
 @media (max-width: 1200px) {
     section {
+        width: 100%;
+        max-width: 100%;
         padding: min(2rem, 18%) 2rem;
         margin: 10px 8px;
     }
 
     .container {
+        width: 100%;
+        max-width: 100%;
         padding: min(2rem, 18%) 2rem;
         margin: 10px 8px;
     }
