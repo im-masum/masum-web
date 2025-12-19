@@ -271,18 +271,6 @@ section {
     }
 }
 
-/* Responsive: Medium screens and tablets (992px - 1199px) */
-@media (max-width: 992px) {
-    section {
-        padding: 2rem 1.25rem;
-        margin: 16px 6px;
-        border-radius: 16px;
-    }
-
-    .container {
-        padding: 1.5rem 1.5rem;
-    }
-}
 
 @media (max-width: 768px) {
 
