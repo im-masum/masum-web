@@ -284,21 +284,7 @@ section {
     }
 }
 
-/* Responsive: Small tablets and landscape phones (880px - 991px) */
-@media (max-width: 880px) {
-    section {
-        padding: 1.75rem 1rem;
-        margin: 10px 5px;
-        border-radius: 14px;
-    }
-
-}
-
-/* Responsive: Portrait tablets and large phones (768px - 879px) */
 @media (max-width: 768px) {
-    * {
-        font-size: 15px;
-    }
 
     section {
         padding: 1.5rem 0.75rem;
@@ -324,12 +310,8 @@ section {
     }
 }
 
-/* Responsive: Small phones (640px - 767px) */
 @media (max-width: 640px) {
-    * {
-        font-size: 14px;
-    }
-
+    
     section {
         padding: 1.25rem 0.5rem;
         margin: 10px 0;
