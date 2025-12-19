@@ -455,19 +455,23 @@
 }
 
 /* Responsive adjustments */
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
     .hero {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
         padding: min(1.5rem, 10%) 1.5rem;
-        margin: 1rem;  
+        margin: 0 auto;
     }
 
     .hero-inner {
         flex-direction: column;
         gap: 2rem;
         text-align: center;
+        align-items: center;
+        justify-content: center;
         padding: min(1.5rem, 10%) 1.5rem;
-        margin: 1rem;
-
+        margin: 40px;
     }
 
     .hero-ctas, .hero-meta {
@@ -484,7 +488,7 @@
 @media (max-width: 768px) {
     .hero {
         padding: min(1.5rem, 10%) 1.5rem;
-        margin: 1rem;  
+        margin: 0 auto;  
     }
 
     .hero-ctas {
