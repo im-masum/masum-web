@@ -255,11 +255,11 @@ section {
 }
 
 /* Responsive: Large screens (1200px and up) */
-@media (max-width: 1200px) {
+@media (max-width: 992px) {
     section {
         width: 95%;
         max-width: 1200px;
-        padding: min(2rem, 18%) 2rem;
+        padding: min(2rem, 20%) 2rem;
         margin: 20px auto;
     }
 
