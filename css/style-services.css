@@ -10,6 +10,7 @@
     background: var(--bg);
     margin: 0 auto;
 }
+
 .services-header {
     display: flex;
     flex-direction: column;
@@ -71,27 +72,26 @@
 }
 
 .services-grid {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px;
+    /* responsive grid for service cards */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1rem;
+    align-items: stretch;
     padding: min(2rem, 16%) 2rem;
 }
 
 .service-card {
     width: 100%;
-    max-width: 500px;
     background: var(--bg-secondary);
-    border-radius: 20px;
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 14px;
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+    transition: transform 0.28s ease, box-shadow 0.28s ease;
     position: relative;
     overflow: hidden;
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(20px);
     animation: fadeSlideUp 0.8s ease-out forwards;
 }
 
@@ -109,21 +109,33 @@
 }
 
 .service-card:hover::before {
-    opacity: 0.05;
+    opacity: 0.04;
 }
 
 .service-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    transform: translateY(-6px);
+    box-shadow: 0 18px 36px rgba(0, 0, 0, 0.08);
 }
 
 .service-content {
     position: relative;
     z-index: 1;
-    padding: 30px;
+    padding: 22px;
     height: 100%;
     display: flex;
     flex-direction: column;
+}
+
+/* Reduce hover animations on touch devices */
+@media (hover: none) {
+    .service-card:hover {
+        transform: none;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+    }
+
+    .service-card::before {
+        opacity: 0.02;
+    }
 }
 
 .service-icon {

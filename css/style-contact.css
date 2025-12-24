@@ -11,9 +11,11 @@
     text-align: center;
     margin: 0 auto;
 }
+
 .section-header {
     padding: min(1rem, 8%) 2rem;
 }
+
 .section-header h2 {
     font-size: 2rem;
     margin-bottom: 0.5rem;
@@ -23,6 +25,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
 .section-header h2::after {
     content: '';
     display: block;
@@ -32,6 +35,7 @@
     border-radius: 2px;
     background: var(--accent-gradient);
 }
+
 .section-header p {
     font-size: 1rem;
     color: var(--text);
@@ -40,27 +44,25 @@
 }
 
 .contact-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    align-items: center;
+    /* Use grid to place form and cards side-by-side on wide screens */
+    display: grid;
+    grid-template-columns: 1fr 420px;
+    gap: 1.25rem;
+    align-items: start;
     justify-content: center;
-    max-width: 100%;
+    max-width: 1200px;
     width: 100%;
     margin: 0 auto;
     padding: min(2rem, 16%) 2rem;
-    flex-wrap: wrap;
 }
 
 .contact-card {
-    flex: 1 1 280px;
     background: var(--bg);
     color: var(--text);
     border-radius: 12px;
-    padding: min(1.5rem, 12%) 1.5rem;
+    padding: 1rem 1rem;
     border: 1px solid rgba(255, 255, 255, 0.04);
-    box-shadow: 0 10px 30px rgba(2, 6, 23, 0.06);
-    
+    box-shadow: 0 8px 24px rgba(2, 6, 23, 0.05);
 }
 
 .contact-methods {
@@ -126,14 +128,13 @@
 
 
 .contact-form {
-    flex: 1 1 520px;
-    min-width: 500px;
     background: var(--bg);
     color: var(--text);
-    padding: min(1.5rem, 12%) 1.5rem;
-    box-shadow: 0 10px 30px rgba(2, 6, 23, 0.06);
+    padding: 1rem 1rem;
+    box-shadow: 0 8px 24px rgba(2, 6, 23, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.03);
     border-radius: 12px;
+    width: 100%;
 }
 
 /* floating label fields */
@@ -163,6 +164,7 @@
     resize: vertical;
     transition: box-shadow .18s, transform .12s;
     font-size: 1rem;
+    box-sizing: border-box;
 }
 
 .form-field .label {
@@ -246,8 +248,7 @@
     }
 
     .contact-form {
-        flex: 1 1 450px;
-        padding: 1.5rem;
+        padding: 1rem;
     }
 
     .form-field input,
@@ -263,27 +264,15 @@
     }
 
     .contact-grid {
-        flex-direction: column;
-        gap: 1.25rem;
+        display: block;
         padding: 1rem;
     }
 
-    .contact-card {
-        order: 2;
+    .contact-card, .contact-form {
         width: 100%;
-        max-width: 520px;
-        margin: 0 auto;
-        flex: 1 1 auto;
-        padding: 1.25rem;
-    }
-
-    .contact-form {
-        order: 1;
-        width: 100%;
-        max-width: 520px;
-        margin: 0 auto;
-        flex: 1 1 auto;
-        padding: 1.25rem;
+        max-width: 100%;
+        margin: 0 auto 1rem;
+        box-sizing: border-box;
     }
 
     .contact-methods {

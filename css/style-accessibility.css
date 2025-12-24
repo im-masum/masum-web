@@ -1,4 +1,4 @@
-/* Skip link styles */ 
+/* Skip link styles */
 .skip-link {
     position: absolute;
     left: -9999px;
@@ -27,7 +27,7 @@
 }
 
 /* focus-visible outlines (keyboard users) */
- *:focus:not(:focus-visible) {
+*:focus:not(:focus-visible) {
     outline: none;
 }
 
@@ -35,10 +35,10 @@
     outline: 3px solid var(--accent);
     outline-offset: 3px;
     border-radius: 4px;
-} 
+}
 
- /* Honeypot (visually-hidden / off-canvas)  */
- .honeypot {
+/* Honeypot (visually-hidden / off-canvas)  */
+.honeypot {
     position: absolute !important;
     left: -9999px !important;
     width: 1px !important;
@@ -46,4 +46,35 @@
     overflow: hidden !important;
     pointer-events: none !important;
     opacity: 0 !important;
-} 
+}
+
+/* Respect reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.001ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* High contrast support: increase readability */
+@media (prefers-contrast: more) {
+    body {
+        background-color: #fff !important;
+        color: #000 !important;
+    }
+
+    a {
+        text-decoration: underline !important;
+    }
+}
+
+/* Focus indicator improvements for keyboard users */
+button:focus, a:focus, input:focus, textarea:focus {
+    outline: 3px solid var(--accent) !important;
+    outline-offset: 3px !important;
+}

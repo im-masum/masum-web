@@ -197,7 +197,7 @@ projectFilters.forEach((filter) => {
         const el = entry.target;
         const pct = el.getAttribute("data-percent") || "0";
         el.style.width = pct + "%";
-        el.setAttribute("aria-valuenow", pct);
+        el.setAttribute("aria-valueof", pct);
         observer.unobserve(el);
       });
     },
