@@ -260,12 +260,12 @@ section {
         width: 95%;
         max-width: 1200px;
         padding: min(2rem, 20%) 2rem;
-        margin: 20px auto;
+        margin: 20px;
     }
 
     .container {
-        padding: min(2rem, 18%) 2rem;
-        margin: 0 auto;
+        padding: min(2rem, 20%) 2rem;
+        margin: 20px;
     }
 }
 
@@ -273,15 +273,17 @@ section {
 @media (max-width: 768px) {
 
     section {
+        width: 95%;
+        max-width: 992px;
         padding: min(1.5rem, 12%) 1.5rem;
-        margin: 20px 10px;
+        margin: 10px;
         border-radius: 12px;
         box-shadow: 2px 2px 15px rgba(80, 80, 80, 0.08);
     }
 
     .container {
         padding: min(1.25rem, 14%) 1rem;
-        margin: 0 auto;
+        margin: 10px;
     }
 
     .btn {
@@ -296,8 +298,10 @@ section {
 }
 
 @media (max-width: 640px) {
-    
+
     section {
+        width: 95%;
+        max-width: 800px;
         padding: 1.25rem 0.5rem;
         margin: 0 auto;
         border-radius: 10px;
