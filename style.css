@@ -309,8 +309,10 @@ section {
     }
 
     .container {
-        padding: 1rem;
-        margin: 0 auto;
+        width: 95%;
+        max-width: 800px;
+        padding: min(1rem, 8%) 1rem;
+        margin: 10px;
     }
 
     .btn {
