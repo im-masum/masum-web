@@ -492,7 +492,7 @@
     }
 
     .hero-ctas {
-        flex-direction: column;
+        /* flex-direction: column; */
         align-items: stretch;
         justify-content: center;
     }
