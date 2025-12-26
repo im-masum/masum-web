@@ -416,6 +416,15 @@
     max-width: 90%;
 }
 
+
+.gradient-text {
+    background: var(--accent-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
 /* shapes */
 .hero-bg-shapes {
     position: absolute;
@@ -485,15 +494,13 @@
     }
 }
 
-@media (max-width: 768px) {
+ /* @media (max-width: 768px) {
     .hero {
         padding: min(1.5rem, 10%) 1.5rem;
         margin: 0 auto;  
     }
 
     .hero-ctas {
-        /* flex-direction: column; */
-        align-items: stretch;
         justify-content: center;
     }
 
@@ -510,17 +517,8 @@
     .card-info {
         transform: translateY(0);
     }
-}
+}  */
 
-.gradient-text {
-    background: var(--accent-gradient);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    display: inline-block;
-}
-
-/* Additional responsive tweaks for the hero section */
 @media (max-width: 880px) {
     .hero-inner {
         flex-direction: column;
