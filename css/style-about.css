@@ -78,11 +78,11 @@
 .about-grid {
     width: 100%;
     max-width: 100%;
-    /* use grid to allow profile + content columns */
-    display: grid;
-    grid-template-columns: 1fr 340px;
+    display: flex;
+    flex-direction: column;
     gap: 2rem;
-    align-items: start;
+    align-items: center;
+    justify-content: center;
     padding: min(2rem, 16%) 2rem;
 }
 
@@ -105,33 +105,6 @@
     display: block;
 }
 
-/* Responsive adjustments: collapse to single column on small screens */
-@media (max-width: 880px) {
-    .about-grid {
-        grid-template-columns: 1fr;
-        padding: 1rem;
-        gap: 1rem;
-    }
-
-    .about-profile {
-        order: 1;
-        padding: 1rem;
-    }
-
-    .about-content {
-        order: 2;
-    }
-}
-
-@media (max-width: 480px) {
-    .about-grid {
-        padding: 0.75rem;
-    }
-
-    .about-profile img {
-        max-width: 280px;
-    }
-}
 
 .profile-meta h3 {
     margin-top: 0.75rem;
@@ -218,11 +191,11 @@
 /* Responsive for medium screens and tablets */
 @media (max-width: 992px) {
     .about-section {
-        padding: 3rem 1.5rem;
+        padding: min(3rem, 12%) 1.5rem;
     }
 
     .about-container {
-        padding: 2rem 1.5rem;
+        padding: min(2rem, 12%) 1.5rem;
     }
 
     .about-header {
@@ -257,11 +230,11 @@
 /* Responsive for small tablets and landscape phones */
 @media (max-width: 880px) {
     .about-section {
-        padding: 2.5rem 1rem;
+        padding: min(2.5rem, 10%) 1rem;
     }
 
     .about-container {
-        padding: 2rem 1rem;
+        padding: min(1.5rem, 10%) 1rem;
     }
 
     .about-header {
@@ -352,11 +325,11 @@
 /* Responsive for portrait tablets and large phones */
 @media (max-width: 768px) {
     .about-section {
-        padding: 2rem 0.75rem;
+        padding: min(2rem, 8%) 0.75rem;
     }
 
     .about-container {
-        padding: 1.5rem 0.75rem;
+        padding: min(1.25rem, 8%) 0.75rem;
     }
 
     .about-header {
