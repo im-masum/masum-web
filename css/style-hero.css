@@ -228,7 +228,7 @@
 }
 
 /* Stack hero columns on smaller screens */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) { 
     .hero-inner {
         flex-direction: column;
         gap: 1rem;
@@ -264,7 +264,7 @@
         flex-direction: column;
         gap: 0.75rem;
     }
-}
+}*/
 
 .hero-card {
     padding: min(1rem, 8%) 1rem;
