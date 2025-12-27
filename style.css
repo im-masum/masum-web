@@ -138,12 +138,19 @@ section {
     border: 1px solid rgba(0, 0, 0, 0.06);
     border-radius: 50%;
     position: fixed;
-    bottom: 40px;
-    right: 30px;
-    width: 35px;
+    bottom: 15px;
+    right: 50%;
+    width: 100%;
+    max-width: 35px;
     height: 35px;
     background: var(--accent);
 }
+
+#backToTop i {
+    color: var(--text);
+    font-size: 1.2rem;
+}
+
 
 #backToTop.visible {
     opacity: 1;
