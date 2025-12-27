@@ -96,6 +96,55 @@
     color: var(--accent);
 }
 
+/* Footer social buttons */
+.footer-contact .social {
+    display: flex;
+    gap: 0.75rem;
+    margin-top: 0.75rem;
+}
+
+.footer-contact .social a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: transparent;
+    color: var(--text);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
+    transition: transform 0.18s ease, background 0.18s ease, color 0.18s ease;
+    text-decoration: none;
+    font-size: 1.05rem;
+}
+
+.footer-contact .social a:hover,
+.footer-contact .social a:focus {
+    transform: translateY(-3px) scale(1.03);
+    background: var(--accent-gradient);
+    color: #fff;
+    border-color: transparent;
+}
+
+.footer-contact .social a:focus {
+    outline: 3px solid var(--accent);
+    outline-offset: 3px;
+}
+
+/* Icon labels hidden visually but available to screen readers */
+.footer-contact .social a .label {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+}
+
 
 
 .footer-nav h4, .footer-contact h4, .footer-newsletter h4 {

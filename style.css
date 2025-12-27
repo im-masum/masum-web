@@ -292,8 +292,6 @@ section {
     }
 
     .container {
-        width: 95%;
-        max-width: 992px;
         padding: min(1.25rem, 14%) 1rem;
         margin: 10px;
     }
@@ -313,8 +311,6 @@ section {
     }
 
     .container {
-        width: 95%;
-        max-width: 800px;
         padding: min(1rem, 8%) 1rem;
         margin: 10px;
     }
