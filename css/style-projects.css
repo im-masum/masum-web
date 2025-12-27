@@ -207,7 +207,13 @@
 
 .project-actions {
     display: flex;
+    justify-content: flex-start;
+    align-items: center;
     gap: 1rem;
+}
+.project-actions .btn {
+    font-size: 0.9rem;
+    padding: min(0.5rem, 8%) 1rem;
 }
 
 /* Responsive for tablets and medium screens */

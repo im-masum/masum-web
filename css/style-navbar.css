@@ -151,7 +151,7 @@
 /* Responsive: Large screens and desktops */
 @media (max-width: 1200px) {
     .navbar {
-        padding: 16px 32px;
+        padding: min(1.5rem, 8%) 2rem;
     }
 
     .logo {
@@ -174,7 +174,7 @@
 /* Responsive: Medium screens and tablets */
 @media (max-width: 992px) {
     .navbar {
-        padding: 14px 24px;
+        padding: min(1.25rem, 8%) 24px;
     }
 
     .logo {
@@ -202,7 +202,7 @@
 /* Responsive: Small tablets and landscape phones */
 @media (max-width: 880px) {
     .navbar {
-        padding: 12px 20px;
+        padding: min(1rem, 8%) 2rem;
     }
 
     .logo {
@@ -229,7 +229,7 @@
 /* Responsive: Portrait tablets and large phones - MOBILE MENU */
 @media (max-width: 768px) {
     .navbar {
-        padding: 12px 16px;
+        padding: min(1rem, 8%) 2rem;
     }
 
     .logo {
