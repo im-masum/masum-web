@@ -130,14 +130,23 @@
 
 .profile-links {
     width: 100%;
-    max-width: 1200px;
+    max-width: 100%;
     display: inline-flex;
-    gap: 1.5rem;
+    gap: 1rem;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     margin-top: 0.75rem;
-    padding: min(1rem, 8%) 1rem;
+    padding: min(0.5rem, 8%) 2rem;
+}
+.profile-links a {
+    background: var(--accent-gradient);
+    color: var(--text);
+    padding: min(0.5rem, 8%) 1rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background 0.3s, color 0.3s, transform 0.3s;
 }
 
 .about-content h4 {
