@@ -276,11 +276,7 @@ section {
         margin: 20px;
     }
 
-    #backToTop {
-        margin: 0 auto;
-        right: 50%;
-        bottom: 15px;
-    }
+  
 }
 
 
@@ -302,13 +298,7 @@ section {
         margin: 10px;
     }
 
-    #backToTop {
-        margin: 0 auto;
-        right: 50%;
-        bottom: 15px;
-    }
-
-
+  
 }
 
 @media (max-width: 640px) {
