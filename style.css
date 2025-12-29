@@ -275,12 +275,13 @@ section {
         padding: min(2rem, 20%) 2rem;
         margin: 20px;
     }
-  #backToTop {
+
+    #backToTop {
         right: 50%;
         transform: translateX(50%);
         bottom: 12px;
     }
-  
+
 }
 
 
@@ -300,7 +301,12 @@ section {
         margin: 10px;
     }
 
-  
+    #backToTop {
+        right: 50%;
+        transform: translateX(50%);
+        bottom: 12px;
+    }
+
 }
 
 @media (max-width: 640px) {
@@ -317,6 +323,12 @@ section {
     .container {
         padding: min(1rem, 8%) 1rem;
         margin: 10px;
+    }
+
+    #backToTop {
+        right: 50%;
+        transform: translateX(50%);
+        bottom: 10px;
     }
 
     .btn {
