@@ -275,7 +275,11 @@ section {
         padding: min(2rem, 20%) 2rem;
         margin: 20px;
     }
-
+  #backToTop {
+        right: 50%;
+        transform: translateX(50%);
+        bottom: 12px;
+    }
   
 }
 
