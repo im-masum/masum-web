@@ -278,7 +278,6 @@ section {
 
     #backToTop {
         right: 50%;
-        transform: translateX(50%);
         bottom: 12px;
     }
 
@@ -302,7 +301,6 @@ section {
     }
 
     #backToTop {
-        right: 50%;
         transform: translateX(50%);
         bottom: 12px;
     }
@@ -327,7 +325,6 @@ section {
 
     #backToTop {
         right: 50%;
-        transform: translateX(50%);
         bottom: 10px;
     }
 
